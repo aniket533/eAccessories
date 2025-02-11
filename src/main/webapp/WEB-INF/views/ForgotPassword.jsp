@@ -9,7 +9,7 @@
 <body>
 	<h2>Forgot Password</h2>
 	
-	<form>
+	<form action="sendOtp" method="post">
 		<label for="email">Email</label>
         <input type="email" id="email" name="email" required>
         
@@ -18,7 +18,8 @@
         <input type = "submit" value = "Send OTP">
         
         <br>
-        <a href = "login">Login</a>
+       
 	</form>
+	 <a href = "login">Login</a>
 </body>
 </html>
