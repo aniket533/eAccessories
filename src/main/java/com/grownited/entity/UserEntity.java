@@ -21,6 +21,7 @@ public class UserEntity {
 	private String bornYear;
 	private String gender;
 	private String role;  // buyer, seller, admin
+	
 	public Integer getUserId() {
 		return userId;
 	}
@@ -75,6 +76,7 @@ public class UserEntity {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	
 	
 	
 }

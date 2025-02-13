@@ -19,6 +19,11 @@ public class SessionController {
 		return "Home";    // return jsp name
 	}
 	
+	@GetMapping("home")
+	public String home() {
+		return "Home";
+	}
+	
 	@PostMapping("saveuser")
 	public String saveUser(UserEntity userEntity) {
 		
@@ -58,4 +63,6 @@ public class SessionController {
 	public String updatePassword() {
 		return "Login";
 	}
+	
+	
 }
