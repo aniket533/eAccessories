@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New User Address</title>
+</head>
+<body>
+	<h2>New User Address</h2>
+	<form action="saveuseraddress" method="post">
+		
+		<label for="title">Title</label>
+        <select id="title" name="title" required>
+            <option value="">Select</option>
+            <option value="home">Home</option>
+            <option value="office">Office</option>
+            <option value="store">Store</option>
+        </select>
+        <br><br>
+        
+        <label for="unitName">Unit Name: </label>
+        <input type="text" id="unitName" name="unitName">
+        <br><br>
+        
+        <label for="street">Street: </label>
+        <input type="text" id="street" name="street">
+        <br><br>
+        
+        <label for="landMark">Land Mark: </label>
+        <input type="text" id="landMark" name="landMark">
+        <br><br>
+        
+        <label for="zipCode">Zip Code: </label>
+        <input type="text" id="zipCode" name="zipCode">
+        <br><br>
+        
+        <input type="submit" value="Save Address">
+	</form>
+</body>
+</html>

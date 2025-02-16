@@ -48,10 +48,10 @@
         
         <br><br>
 
-        <label for="dateOfBirth">Date of Birth</label>
+       <!-- <label for="dateOfBirth">Date of Birth</label>
         <input type="date" id="dateOfBirth" name="dateOfBirth" required>
         
-        <br><br>
+        <br><br> --> 
 
         <label for="contactNum">Contact Number</label>
         <input type="tel" id="contactNum" name="contactNum" required>

@@ -12,7 +12,7 @@
 		<label for="stateName">Enter your state</label>
 		<input type="text" id="stateName" name="stateName">
 		<br><br>
-		<input type="submit" vlaue="Save state">
+		<input type="submit" value="Save state">
 	</form>
 	
 </body>
