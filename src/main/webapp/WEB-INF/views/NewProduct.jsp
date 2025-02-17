@@ -30,15 +30,15 @@
 		<br><br>
 		
 		<label for="productImageURL1">Product Image URL1: </label>
-		<input type="text" id="productImageURL1" name="productImageURL1">
+		<input type="file" id="productImageURL1" name="productImageURL1">
 		<br><br>
 		
 		<label for="productImageURL2">Product Image URL2: </label>
-		<input type="text" id="productImageURL2" name="productImageURL2">
+		<input type="file" id="productImageURL2" name="productImageURL2">
 		<br><br>
 		
 		<label for="productImageURL3">Product Image URL3: </label>
-		<input type="text" id="productImageURL3" name="productImageURL3">
+		<input type="file" id="productImageURL3" name="productImageURL3">
 		<br><br>
 		
 		<label for="quantity">Quantity: </label>
