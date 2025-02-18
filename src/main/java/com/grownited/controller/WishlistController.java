@@ -1,9 +1,11 @@
 package com.grownited.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -26,5 +28,15 @@ public class WishlistController {
 		wishlistEntity.setCreatedAt(new Date());
 		repoWishlist.save(wishlistEntity);
 		return "Wishlist";
+	}
+	
+	@GetMapping("listwishlist")
+	public String listWishlist(Model model) {
+		
+		List<WishlistEntity> wishlistList = repoWishlist.findAll();
+		
+		model.addAttribute("wishlistList", wishlistList);
+		
+		return "ListWishlist";
 	}
 }

@@ -1,9 +1,11 @@
 package com.grownited.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -27,5 +29,15 @@ public class OrdersController {
 		ordersEntity.setCreatedAt(new Date());
 		repoOrders.save(ordersEntity);
 		return "Orders";
+	}
+	
+	@GetMapping("listorder")
+	public String listOrder(Model model) {
+		
+		List<OrdersEntity> orderList = repoOrders.findAll();
+		
+		model.addAttribute("orderList", orderList);
+		
+		return "ListOrders";
 	}
 }
