@@ -13,6 +13,9 @@
 	<h2>List of your wishlist</h2>
 	
 	<table border="1">
+		<tr>
+			<th>Created At</th>
+		</tr>
 		<c:forEach items="${wishlistList }" var="w">
 			<tr>
 				<td>${w.createdAt }</td>

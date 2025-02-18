@@ -28,7 +28,7 @@ public class OrdersController {
 		
 		ordersEntity.setCreatedAt(new Date());
 		repoOrders.save(ordersEntity);
-		return "Orders";
+		return "redirect:/listorder";
 	}
 	
 	@GetMapping("listorder")

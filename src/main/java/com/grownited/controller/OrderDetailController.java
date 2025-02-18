@@ -26,7 +26,7 @@ public class OrderDetailController {
 	public String saveOrderDetail(OrderDetailEntity orderDetailEntity) {
 		
 		repoOrderDetail.save(orderDetailEntity);
-		return "OrderDetail";
+		return "redirect:/listorderdetail";
 	}
 	
 	@GetMapping("listorderdetail")

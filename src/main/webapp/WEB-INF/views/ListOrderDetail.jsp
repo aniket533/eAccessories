@@ -13,6 +13,11 @@
 	<h2>Order Detail List</h2>
 	
 	<table border="1">
+		<tr>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Status</th>
+		</tr>
 		<c:forEach items="${orderDetailList }" var="od">
 			<tr>
 				<td>${od.quantity }</td>

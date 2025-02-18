@@ -28,7 +28,7 @@ public class ReviewsController {
 		
 		reviewsEntity.setCreatedAt(new Date());
 		repoReviews.save(reviewsEntity);
-		return  "Reviews";
+		return  "redirect:/listreviews";
 	}
 	
 	@GetMapping("listreviews")

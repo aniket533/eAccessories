@@ -25,7 +25,7 @@ public class CategoryController {
 	@PostMapping("savecategory")
 	public String saveCategory(CategoryEntity categoryEntity) {
 		repoCategory.save(categoryEntity);
-		return "NewCategory";
+		return "redirect:/listcategory";
 	}
 	
 	@GetMapping("listcategory")

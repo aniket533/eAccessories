@@ -11,8 +11,13 @@
 <body>
 	<h2>List Product</h2>
 	<table border="1">
+		<tr>
+				<th>Product Name</th>
+				<th>Base Price</th>
+				<th>Offer Price</th>
+		</tr>
 		<c:forEach items="${productList}" var="m">
-		
+					
 			<tr>
 			<td>${m.productName }</td>
 			<td>${m.basePrice }</td>

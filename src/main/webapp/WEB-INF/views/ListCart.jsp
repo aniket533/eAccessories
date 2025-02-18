@@ -13,6 +13,9 @@
 	<h2>Cart List</h2>
 	
 	<table border="1">
+		<tr>
+			<th>Quantity</th>
+		</tr>
 		<c:forEach items="${cartList}" var="c">
 			<tr>
 				<td>${c.quantity}</td>

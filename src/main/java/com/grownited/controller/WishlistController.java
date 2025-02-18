@@ -27,7 +27,7 @@ public class WishlistController {
 		
 		wishlistEntity.setCreatedAt(new Date());
 		repoWishlist.save(wishlistEntity);
-		return "Wishlist";
+		return "redirect:/listwishlist";
 	}
 	
 	@GetMapping("listwishlist")

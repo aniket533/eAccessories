@@ -13,6 +13,9 @@
 	<h2>Category List</h2>
 	
 	<table border="1">
+		<tr>
+			<th>Category Name</th>
+		</tr>
 		<c:forEach items="${categoryList }" var="g">
 			<tr>
 				<td>${g.categoryName }</td>

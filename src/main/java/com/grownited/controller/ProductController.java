@@ -27,7 +27,7 @@ public class ProductController {
 		
 		repoProduct.save(productEntity);
 		
-		return "NewProduct";
+		return "redirect:/listproduct";
 	}
 	
 	@GetMapping("listproduct")

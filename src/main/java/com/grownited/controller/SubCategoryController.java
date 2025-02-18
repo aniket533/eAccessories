@@ -27,7 +27,7 @@ public class SubCategoryController {
 		
 		repoSubCategory.save(subCategoryEntity);
 		
-		return "SubCategory";
+		return "redirect:/listsubcategory";
 	}
 	
 	

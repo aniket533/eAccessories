@@ -13,6 +13,11 @@
 	<h2>Review List</h2>
 	
 	<table border="1">
+		<tr>
+			<th>Review</th>
+			<th>Rating</th>
+			<th>Created At</th>
+		</tr>
 		<c:forEach items="${reviewsList }" var="r">
 			<tr>
 				<td>${r.reviewText }</td>

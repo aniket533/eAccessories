@@ -27,7 +27,7 @@ public class CartController {
 		
 		repoCart.save(cartEntity);
 		
-		return "NewCart";
+		return "redirect:/listcart";
 	}
 	
 	@GetMapping("listcart")

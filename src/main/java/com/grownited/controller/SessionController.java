@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.grownited.entity.UserEntity;
 import com.grownited.repository.UserRepository;
+import com.grownited.service.MailService;
 
 @Controller
 public class SessionController {
+	
+	//mail service
+	@Autowired
+	MailService serviceMail;
 	
 	@Autowired
 	UserRepository repoUser;   // object of UserRepository interface
@@ -46,6 +51,9 @@ public class SessionController {
 		userEntity.setCreatedAt(new Date());  // date value
 		userEntity.setActive(true);
 		repoUser.save(userEntity);  // insert query
+		
+		// send mail
+		serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
 		
 		return "Login";//jsp
 	}
