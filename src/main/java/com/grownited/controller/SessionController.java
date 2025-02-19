@@ -3,6 +3,7 @@ package com.grownited.controller;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,11 @@ public class SessionController {
 	
 	@Autowired
 	UserRepository repoUser;   // object of UserRepository interface
+	
+	
+	// creating object of PasswordEncoder to encrypt the password.
+	@Autowired
+	PasswordEncoder encoder;  // use this object in below method
 	
 	
 	@GetMapping(value = {"/", "signup"})
@@ -46,6 +52,13 @@ public class SessionController {
 //		System.out.println(userEntity.getEmail());
 //		System.out.println(userEntity.getPassword());
 //		System.out.println(userEntity.getGender());
+		
+		
+		String encPassword = encoder.encode(userEntity.getPassword());
+		
+		userEntity.setPassword(encPassword);
+		
+		
 		
 		userEntity.setRole("USER");  // default value of role
 		userEntity.setCreatedAt(new Date());  // date value
