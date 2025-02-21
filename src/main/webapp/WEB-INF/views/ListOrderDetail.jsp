@@ -17,12 +17,14 @@
 			<th>Quantity</th>
 			<th>Price</th>
 			<th>Status</th>
+			<th>Action</th>
 		</tr>
 		<c:forEach items="${orderDetailList }" var="od">
 			<tr>
 				<td>${od.quantity }</td>
 				<td>${od.price }</td>
 				<td>${od.status }</td>
+				<td><a href="vieworderdetail?orderDetailId=${od.orderDetailId }">View</a> | <a href="deleteorderdetail?orderDetailId=${od.orderDetailId }">Delete</a> | Edit</td>
 			</tr>
 		</c:forEach>
 	</table>

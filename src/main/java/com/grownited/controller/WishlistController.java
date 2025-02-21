@@ -2,6 +2,7 @@ package com.grownited.controller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,5 +39,31 @@ public class WishlistController {
 		model.addAttribute("wishlistList", wishlistList);
 		
 		return "ListWishlist";
+	}
+	
+	@GetMapping("viewwishlist")
+	public String viewWishlist(Integer wishlistId, Model model) {
+		
+		Optional<WishlistEntity> op = repoWishlist.findById(wishlistId);
+		
+		if(op.isEmpty()) {
+			//data not found
+			
+		} else {
+			// data found
+			WishlistEntity wishlist = op.get();
+			
+			//send data to jsp
+			model.addAttribute("wishlist", wishlist);
+		}
+		
+		
+		return "ViewWishlist";
+	}
+	
+	@GetMapping("deletewishlist")
+	public String deleteWishlist(Integer wishlistId) {
+		repoWishlist.deleteById(wishlistId);
+		return "redirect:/listwishlist";
 	}
 }

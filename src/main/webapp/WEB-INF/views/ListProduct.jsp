@@ -15,6 +15,7 @@
 				<th>Product Name</th>
 				<th>Base Price</th>
 				<th>Offer Price</th>
+				<th>Action</th>
 		</tr>
 		<c:forEach items="${productList}" var="m">
 					
@@ -22,6 +23,7 @@
 			<td>${m.productName }</td>
 			<td>${m.basePrice }</td>
 			<td>${m.offerPrice }</td>
+			<td><a href="viewproduct?productId=${m.productId }">View</a> | <a href="deleteproduct?productId=${m.productId }">Delete</a> | Edit </td>
 				
 			</tr>
 		</c:forEach>

@@ -15,10 +15,12 @@
 	<table border="1">
 		<tr>
 			<th>Sub Category</th>
+			<th>Action</th>
 		</tr>
 		<c:forEach items="${subCategoryList }" var="a">
 			<tr>
 				<td>${a.subCategoryName }</td>
+				<td><a href="viewsubcategory?subCategoryId=${a.subCategoryId }">View</a> | <a href="deletesubcategory?subCategoryId=${a.subCategoryId }">Delete</a> | Edit</td>
 			</tr>
 		</c:forEach>
 	</table>

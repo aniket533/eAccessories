@@ -15,10 +15,12 @@
 	<table border="1">
 		<tr>
 			<th>Quantity</th>
+			<th>Action</th>
 		</tr>
 		<c:forEach items="${cartList}" var="c">
 			<tr>
 				<td>${c.quantity}</td>
+				<td><a href="viewcart?cartId=${c.cartId }">View</a> | <a href="deletecart?cartId=${c.cartId }">Delete</a> | Edit</td>
 			</tr>
 		</c:forEach>
 	</table>

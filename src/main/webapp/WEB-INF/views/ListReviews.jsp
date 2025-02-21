@@ -17,12 +17,14 @@
 			<th>Review</th>
 			<th>Rating</th>
 			<th>Created At</th>
+			<th>Action</th>
 		</tr>
 		<c:forEach items="${reviewsList }" var="r">
 			<tr>
 				<td>${r.reviewText }</td>
 				<td>${r.rating }</td>
 				<td>${r.createdAt }</td>
+				<td><a href="viewreview?reviewId=${r.reviewId }">View</a> | <a href="deletereview?reviewId=${r.reviewId }">Delete</a> | Edit</td>
 			</tr>
 		</c:forEach>
 	</table>

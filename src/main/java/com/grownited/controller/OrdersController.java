@@ -2,6 +2,7 @@ package com.grownited.controller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,5 +40,30 @@ public class OrdersController {
 		model.addAttribute("orderList", orderList);
 		
 		return "ListOrders";
+	}
+	
+	@GetMapping("vieworder")
+	public String viewOrder(Integer orderId, Model model) {
+		
+		Optional<OrdersEntity> op = repoOrders.findById(orderId);
+		
+		if(op.isEmpty()) {
+			//data not found
+		} else {
+			//data found
+			OrdersEntity order = op.get();
+			
+			//send data to jsp
+			model.addAttribute("order", order);
+		}
+		
+		return "ViewOrders";
+	}
+	
+	@GetMapping("deleteorder")
+	public String deleteOrder(Integer orderId) {
+		
+		repoOrders.deleteById(orderId);
+		return "redirect:/listorder";
 	}
 }

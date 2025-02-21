@@ -17,12 +17,14 @@
 			<th>Status</th>
 			<th>Total Amount</th>
 			<th>Created At</th>
+			<th>Action</th>
 		</tr>
 		<c:forEach items="${orderList }" var="o">
 			<tr>
 				<td>${o.status }</td>
 				<td>${o.totalAmount }</td>
 				<td>${o.createdAt }</td>
+				<td><a href="vieworder?orderId=${o.orderId }">View</a> | <a href="deleteorder?orderId=${o.orderId }">Delete</a> | Edit</td>
 			</tr>
 		</c:forEach>
 	</table>
