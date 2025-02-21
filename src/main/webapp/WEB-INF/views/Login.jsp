@@ -10,7 +10,7 @@
 	<h2>Login</h2>
 	<br>
 	
-	 <form action="validateuser" method="post">
+	 <form action="authenticate" method="post">
         <label for="loginEmail">Email</label>
         <input type="email" id="loginEmail" name="email" required>
         
@@ -23,9 +23,19 @@
 
         <button type="submit">Login</button>
         
-        <a href = "forgotpassword">Forgot Password</a>
+        
     </form>
-    <br><br>
+    
+    <br>
+    
+    <a href = "forgotpassword">Forgot Password</a>
+    
+    <br>
+    
+    ${error }
+    
+    <br>
+    
 	<a href="signup">Signup</a>
 	
 </body>

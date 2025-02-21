@@ -1,10 +1,12 @@
 package com.grownited.controller;
 
 import java.util.Date;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -35,13 +37,10 @@ public class SessionController {
 	
 	@GetMapping("login")  // url
 	public String login() {  //method
-		return "Home";    // return jsp name
+		return "Login";    // return jsp name
 	}
 	
-	@GetMapping("home")
-	public String home() {
-		return "Home";
-	}
+	
 	
 	@PostMapping("saveuser")
 	public String saveUser(UserEntity userEntity) {
@@ -71,14 +70,31 @@ public class SessionController {
 		return "Login";//jsp
 	}
 	
-	@PostMapping("validateuser")
-	public String validateUser(UserEntity userEntity) {
+	@PostMapping("authenticate")
+	public String authenticate(String email, String password, Model model) {  // Model is passed to print message on page in case of invalid credentials
 		
 		//validate
-		System.out.println(userEntity.getEmail());
-		System.out.println(userEntity.getPassword());
+//		System.out.println(email);
+//		System.out.println(password);
 		
-		return "Home";
+		//user -> email, password
+		Optional<UserEntity> op = repoUser.findByEmail(email);  // findByEmail has been created in UserRepository 
+		//select * from users where email= :email and password= :password
+		
+		if(op.isPresent()) {
+			//true
+			//email
+			
+			UserEntity dbUser = op.get();  // if there will be valid email then users table will get copied in dbUser
+			
+			if(encoder.matches(password, dbUser.getPassword())) {
+				return "redirect:/home";
+			}
+			
+		}
+		
+		model.addAttribute("error", "Invalid Credentials");
+		return "Login";
 	}
 	
 	// open forgetpassword jsp
