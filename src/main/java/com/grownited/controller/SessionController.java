@@ -14,6 +14,8 @@ import com.grownited.entity.UserEntity;
 import com.grownited.repository.UserRepository;
 import com.grownited.service.MailService;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class SessionController {
 	
@@ -71,7 +73,7 @@ public class SessionController {
 	}
 	
 	@PostMapping("authenticate")
-	public String authenticate(String email, String password, Model model) {  // Model is passed to print message on page in case of invalid credentials
+	public String authenticate(String email, String password, Model model, HttpSession session) {  // Model is passed to print message on page in case of invalid credentials
 		
 		//validate
 //		System.out.println(email);
@@ -87,9 +89,28 @@ public class SessionController {
 			
 			UserEntity dbUser = op.get();  // if there will be valid email then users table will get copied in dbUser
 			
-			if(encoder.matches(password, dbUser.getPassword())) {
-				return "redirect:/home";
-			}
+			boolean ans = encoder.matches(password, dbUser.getPassword());
+			
+			if(ans == true) {
+				
+				//session -> user set
+				session.setAttribute("user", dbUser);
+				
+				if(dbUser.getRole().equals("ADMIN")) {
+					
+					return "redirect:/admindashboard";   // will go to admin controller
+					 
+				} else if(dbUser.getRole().equals("USER")) {
+					
+					return "redirect:/home";
+					
+				} else {
+					
+					model.addAttribute("error", "Please contact Admin with Error Code #0991");
+					
+				}
+				
+			} 
 			
 		}
 		
@@ -115,7 +136,11 @@ public class SessionController {
 	}
 	
 	
-	
-	
+	@GetMapping("logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		
+		return "redirect:login";
+	}
 	
 }

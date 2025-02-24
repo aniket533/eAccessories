@@ -4,14 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>eAccessories</title>
+<title>Admin Dashboard</title>
 </head>
 <body>
-	<h2>eAccessories</h2>
+	<h2>Admin Dashboard</h2>
 	
 	Welcome, ${user.firstName }
 	<br>
-	
 	<a href="logout">Logout</a>
 </body>
 </html>
