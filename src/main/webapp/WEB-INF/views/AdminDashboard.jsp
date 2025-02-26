@@ -11,6 +11,12 @@
 	
 	Welcome, ${user.firstName }
 	<br>
+	<a href="newstate">Add State</a>
+	
+	<br>
+	<a href="newcity">Add City</a>
+	
+	<br>
 	<a href="logout">Logout</a>
 </body>
 </html>
