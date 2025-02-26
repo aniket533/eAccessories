@@ -17,15 +17,14 @@ import com.grownited.repository.StateRepository;
 import com.grownited.repository.UserAddressRepository;
 import com.grownited.repository.UserRepository;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class UserAddressController {
 	
 	@Autowired
 	UserAddressRepository repoUserAddress;
-	
-	@Autowired
-	UserRepository repoUser;
-	
+		
 	@Autowired
 	StateRepository repoState;
 	
@@ -33,11 +32,9 @@ public class UserAddressController {
 	CityRepository repoCity;
 	
 	@GetMapping("newuseraddress")
-	public String newUserAddress(Model model) {
+	public String newUserAddress(Model model, HttpSession session) {
 		
-		List<UserEntity> allUser = repoUser.findAll(); // all user
 		
-		model.addAttribute("allUser", allUser);
 		
 		List<StateEntity> allState = repoState.findAll();
 		
