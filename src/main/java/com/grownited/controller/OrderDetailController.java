@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.grownited.entity.OrderDetailEntity;
+import com.grownited.entity.OrdersEntity;
+import com.grownited.entity.ProductEntity;
 import com.grownited.repository.OrderDetailRepository;
+import com.grownited.repository.OrdersRepository;
+import com.grownited.repository.ProductRepository;
 
 @Controller
 public class OrderDetailController {
@@ -18,8 +22,19 @@ public class OrderDetailController {
 	@Autowired
 	OrderDetailRepository repoOrderDetail;
 	
+	@Autowired
+	ProductRepository repoProduct;
+	
+	@Autowired
+	OrdersRepository repoOrder;
+	
 	@GetMapping("orderdetail")
 	public String orderDetail() {
+		
+		List<ProductEntity> allProduct = repoProduct.findAll();
+		
+		List<OrdersEntity> allOrder = repoOrder.findAll();
+		
 		return "OrderDetail";
 	}
 	

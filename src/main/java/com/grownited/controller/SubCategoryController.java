@@ -9,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.entity.CategoryEntity;
 import com.grownited.entity.SubCategoryEntity;
+import com.grownited.repository.CategoryRepository;
 import com.grownited.repository.SubCategoryRepository;
 
 @Controller
@@ -18,8 +20,16 @@ public class SubCategoryController {
 	@Autowired
 	SubCategoryRepository repoSubCategory;
 	
+	@Autowired
+	CategoryRepository repoCategory;
+	
 	@GetMapping("subcategory")
-	public String subCategory() {
+	public String subCategory(Model model) {
+		
+		List<CategoryEntity> allCategory = repoCategory.findAll();
+		model.addAttribute("allCategory", allCategory);
+		
+		
 		return "SubCategory";
 	}
 	

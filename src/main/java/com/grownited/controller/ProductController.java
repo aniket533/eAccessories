@@ -9,8 +9,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.entity.CategoryEntity;
 import com.grownited.entity.ProductEntity;
+import com.grownited.entity.SubCategoryEntity;
+import com.grownited.repository.CategoryRepository;
 import com.grownited.repository.ProductRepository;
+import com.grownited.repository.SubCategoryRepository;
 
 @Controller
 public class ProductController {
@@ -18,8 +22,21 @@ public class ProductController {
 	@Autowired
 	ProductRepository repoProduct;
 	
+	@Autowired
+	CategoryRepository repoCategory;
+	
+	@Autowired
+	SubCategoryRepository repoSubCategory;
+	
 	@GetMapping("newproduct")
-	public String newProduct() {
+	public String newProduct(Model model) {
+		
+		List<CategoryEntity> allCategory = repoCategory.findAll();
+		model.addAttribute("allCategory", allCategory);
+		
+		List<SubCategoryEntity> allSubCategory = repoSubCategory.findAll();
+		model.addAttribute("allSubCategory", allSubCategory);
+		
 		return "NewProduct";
 	}
 	

@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.grownited.entity.CartEntity;
+import com.grownited.entity.ProductEntity;
+import com.grownited.entity.UserEntity;
 import com.grownited.repository.CartRepository;
+import com.grownited.repository.ProductRepository;
+import com.grownited.repository.UserRepository;
 
 @Controller
 public class CartController {
@@ -18,8 +22,19 @@ public class CartController {
 	@Autowired
 	CartRepository repoCart;
 	
+	@Autowired
+	ProductRepository repoProduct;
+	
+	@Autowired
+	UserRepository repoUser;
+	
 	@GetMapping("cart")
 	public String cart() {
+		
+		List<UserEntity> allUser = repoUser.findAll();
+		
+		List<ProductEntity> allProduct = repoProduct.findAll();
+		
 		return "NewCart";
 	}
 	

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +14,24 @@
 	<form action="saveproduct" method="post">
 		<label for="productName">Product Name: </label>
 		<input type="text" id="productName" name="productName">
+		<br><br>
+		
+		<label for="categoryName">Category: </label>
+		<select name="categoryId">
+			<option>Select Category</option>
+			<c:forEach items="${allCategory }" var="ca">
+				<option value="${ca.categoryId }">${ca.categoryName }</option>
+			</c:forEach>
+		</select>
+		<br><br>
+		
+		<label for="subCategoryName">Category: </label>
+		<select name="subCategoryId">
+			<option>Select Sub Category</option>
+			<c:forEach items="${allSubCategory }" var="sc">
+				<option value="${sc.subCategoryId }">${sc.subCategoryName }</option>
+			</c:forEach>
+		</select>
 		<br><br>
 		
 		<label for="basePrice">Base Price: </label>

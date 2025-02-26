@@ -10,8 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.entity.ProductEntity;
 import com.grownited.entity.ReviewsEntity;
+import com.grownited.entity.UserEntity;
+import com.grownited.repository.ProductRepository;
 import com.grownited.repository.ReviewsRepository;
+import com.grownited.repository.UserRepository;
 
 @Controller
 public class ReviewsController {
@@ -19,8 +23,18 @@ public class ReviewsController {
 	@Autowired
 	ReviewsRepository repoReviews;
 	
+	@Autowired
+	UserRepository repoUser;
+	
+	@Autowired
+	ProductRepository repoProduct;
+	
 	@GetMapping("reviews")
 	public String reviews() {
+		List<UserEntity> allUser = repoUser.findAll();
+		
+		List<ProductEntity> allProduct = repoProduct.findAll();
+		
 		return "Reviews";
 	}
 	

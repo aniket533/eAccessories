@@ -10,7 +10,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.entity.ProductEntity;
+import com.grownited.entity.UserEntity;
 import com.grownited.entity.WishlistEntity;
+import com.grownited.repository.ProductRepository;
+import com.grownited.repository.UserRepository;
 import com.grownited.repository.WishlistRepository;
 
 @Controller
@@ -18,8 +22,19 @@ public class WishlistController {
 	@Autowired	
 	WishlistRepository repoWishlist;
 	
+	@Autowired
+	UserRepository repoUser;
+	
+	@Autowired
+	ProductRepository repoProduct;
+	
 	@GetMapping("wishlist")
 	public String wishlist() {
+		
+		List<UserEntity> allUser = repoUser.findAll();
+		
+		List<ProductEntity> allProduct = repoProduct.findAll();
+		
 		return "Wishlist";
 	}
 	

@@ -12,7 +12,7 @@
 	<h2>New City</h2>
 	<form action="savecity" method="post">
 		
-		<label for"stateName">State: </label>
+		<label for="stateName">State: </label>
 		<select name="stateId">
 			<option>Select State</option>
 			<c:forEach items="${allState }" var="s">

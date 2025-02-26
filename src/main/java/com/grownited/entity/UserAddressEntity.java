@@ -19,7 +19,7 @@ public class UserAddressEntity {
 	private String landMark;
 	private Integer cityId;
 	private Integer stateId;
-	private Integer areaId;
+	private String addressDetail;
 	private String zipCode;
 	public Integer getUserAddressId() {
 		return userAddressId;
@@ -69,17 +69,18 @@ public class UserAddressEntity {
 	public void setStateId(Integer stateId) {
 		this.stateId = stateId;
 	}
-	public Integer getAreaId() {
-		return areaId;
-	}
-	public void setAreaId(Integer areaId) {
-		this.areaId = areaId;
-	}
+	
 	public String getZipCode() {
 		return zipCode;
 	}
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
+	}
+	public String getAddressDetail() {
+		return addressDetail;
+	}
+	public void setAddressDetail(String addressDetail) {
+		this.addressDetail = addressDetail;
 	}
 	
 	

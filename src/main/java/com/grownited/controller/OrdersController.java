@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.grownited.entity.OrdersEntity;
+import com.grownited.entity.UserEntity;
 import com.grownited.repository.OrdersRepository;
+import com.grownited.repository.UserRepository;
 
 @Controller
 public class OrdersController {
@@ -19,8 +21,14 @@ public class OrdersController {
 	@Autowired
 	OrdersRepository repoOrders;
 	
-	@GetMapping("order")
-	public String order() {
+	@Autowired
+	UserRepository repoUser;
+	
+	@GetMapping("neworder")
+	public String order(Model model) {
+		List<UserEntity> allUser = repoUser.findAll();
+		model.addAttribute("allUser", allUser);
+		
 		return "Orders";
 	}
 	
