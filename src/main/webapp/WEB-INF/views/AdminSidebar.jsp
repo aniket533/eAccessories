@@ -20,7 +20,7 @@
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
+            <a href="listuser">
               <i class="bi bi-circle"></i><span>List User</span>
             </a>
           </li>
@@ -73,7 +73,7 @@
 
       
 
-      <li class="nav-heading">Pages</li>
+      <li class="nav-heading">Manage</li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="users-profile.html">
