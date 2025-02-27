@@ -32,7 +32,7 @@ public class UserAddressController {
 	CityRepository repoCity;
 	
 	@GetMapping("newuseraddress")
-	public String newUserAddress(Model model, HttpSession session) {
+	public String newUserAddress(Model model) {
 		
 		
 		
@@ -48,7 +48,12 @@ public class UserAddressController {
 	}
 	
 	@PostMapping("saveuseraddress")
-	public String saveUserAddress(UserAddressEntity userAddressEntity) {
+	public String saveUserAddress(UserAddressEntity userAddressEntity, HttpSession session) {
+		
+		// how to pass userId as foreign key
+		UserEntity user = (UserEntity)session.getAttribute("user");  // typecast into UserEntity
+		Integer userId = user.getUserId();
+		userAddressEntity.setUserId(userId);
 		
 		repoUserAddress.save(userAddressEntity);
 		

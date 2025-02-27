@@ -15,25 +15,28 @@ import com.grownited.entity.UserEntity;
 import com.grownited.repository.OrdersRepository;
 import com.grownited.repository.UserRepository;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class OrdersController {
 	
 	@Autowired
 	OrdersRepository repoOrders;
 	
-	@Autowired
-	UserRepository repoUser;
+	
 	
 	@GetMapping("neworder")
 	public String order(Model model) {
-		List<UserEntity> allUser = repoUser.findAll();
-		model.addAttribute("allUser", allUser);
-		
+				
 		return "Orders";
 	}
 	
 	@PostMapping("saveorder")
-	public String saveOrder(OrdersEntity ordersEntity) {
+	public String saveOrder(OrdersEntity ordersEntity, HttpSession session) {
+		
+		UserEntity user = (UserEntity)session.getAttribute("user");
+		Integer userId = user.getUserId();
+		ordersEntity.setUserId(userId);
 		
 		ordersEntity.setCreatedAt(new Date());
 		repoOrders.save(ordersEntity);

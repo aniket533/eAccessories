@@ -16,6 +16,8 @@ import com.grownited.repository.CartRepository;
 import com.grownited.repository.ProductRepository;
 import com.grownited.repository.UserRepository;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class CartController {
 	
@@ -31,7 +33,6 @@ public class CartController {
 	@GetMapping("cart")
 	public String cart() {
 		
-		List<UserEntity> allUser = repoUser.findAll();
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
 		
@@ -39,7 +40,12 @@ public class CartController {
 	}
 	
 	@PostMapping("savecart")
-	public String saveCart(CartEntity cartEntity) {
+	public String saveCart(CartEntity cartEntity, HttpSession session) {
+		
+		UserEntity user = (UserEntity)session.getAttribute("user");  // this always return as object, that's why we have to typecast into UserEntity.
+		Integer UserId = user.getUserId();
+		cartEntity.setUserId(UserId);
+		
 		
 		repoCart.save(cartEntity);
 		

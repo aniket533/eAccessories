@@ -17,13 +17,13 @@ import com.grownited.repository.ProductRepository;
 import com.grownited.repository.UserRepository;
 import com.grownited.repository.WishlistRepository;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class WishlistController {
 	@Autowired	
 	WishlistRepository repoWishlist;
 	
-	@Autowired
-	UserRepository repoUser;
 	
 	@Autowired
 	ProductRepository repoProduct;
@@ -31,7 +31,6 @@ public class WishlistController {
 	@GetMapping("wishlist")
 	public String wishlist() {
 		
-		List<UserEntity> allUser = repoUser.findAll();
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
 		
@@ -39,7 +38,11 @@ public class WishlistController {
 	}
 	
 	@PostMapping("savewishlist")
-	public String saveWishlist(WishlistEntity wishlistEntity) {
+	public String saveWishlist(WishlistEntity wishlistEntity, HttpSession session) {
+		
+		UserEntity user = (UserEntity)session.getAttribute("user");
+		Integer userId = user.getUserId();
+		wishlistEntity.setUserId(userId);
 		
 		wishlistEntity.setCreatedAt(new Date());
 		repoWishlist.save(wishlistEntity);

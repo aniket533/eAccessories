@@ -17,21 +17,20 @@ import com.grownited.repository.ProductRepository;
 import com.grownited.repository.ReviewsRepository;
 import com.grownited.repository.UserRepository;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class ReviewsController {
 	
 	@Autowired
 	ReviewsRepository repoReviews;
 	
-	@Autowired
-	UserRepository repoUser;
 	
 	@Autowired
 	ProductRepository repoProduct;
 	
 	@GetMapping("reviews")
 	public String reviews() {
-		List<UserEntity> allUser = repoUser.findAll();
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
 		
@@ -39,7 +38,12 @@ public class ReviewsController {
 	}
 	
 	@PostMapping("savereviews")
-	public String saveReviews(ReviewsEntity reviewsEntity) {
+	public String saveReviews(ReviewsEntity reviewsEntity, HttpSession session) {
+		
+		// passing userId as foreign key
+		UserEntity user = (UserEntity)session.getAttribute("user");
+		Integer userId = user.getUserId();
+		reviewsEntity.setUserId(userId);
 		
 		reviewsEntity.setCreatedAt(new Date());
 		repoReviews.save(reviewsEntity);
