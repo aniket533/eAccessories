@@ -82,6 +82,9 @@
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>
 
+					<div class="text-danger">
+						${error }
+					</div>
                    
                     <div class="col-12">
                       <button class="btn btn-primary w-100" type="submit">Login</button>
