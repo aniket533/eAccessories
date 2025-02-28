@@ -42,6 +42,7 @@
 	
 	<jsp:include page="AdminCss.jsp"></jsp:include>
 	
+	<!-- Template Table CSS File -->
 	<link  href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
 
 </head>

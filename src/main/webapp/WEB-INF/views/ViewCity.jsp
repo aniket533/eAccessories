@@ -4,17 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>View Cart</title>
+<title>View City</title>
 </head>
 <body>
-	<h2>View Cart</h2>
-	Quantity: ${cart.quantity }
+	<h2>View City</h2>
+	City Name: ${city.cityName }
 	<br>
-	Cart ID: ${cart.cartId }
+	City ID: ${city.cityId }
 	<br>
-	User ID: ${cart.userId }
-	<br>
-	Product ID: ${cart.productId }
+	State ID: ${city.stateId }
 	<br>
 </body>
 </html>

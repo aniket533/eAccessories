@@ -1,6 +1,7 @@
 package com.grownited.controller.admin;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -40,5 +41,40 @@ public class CityController {
 		
 		repoCity.save(cityEntity);
 		return "redirect:/newcity";
+	}
+	
+	@GetMapping("listcity")
+	public String listCity(Model model) {
+		
+		List<CityEntity> cityList = repoCity.findAll();
+		
+		model.addAttribute("cityList", cityList);
+		
+		return "ListCity";
+	}
+	
+	@GetMapping("viewcity")
+	public String viewCity(Integer cityId, Model model) {
+		
+		Optional<CityEntity> op = repoCity.findById(cityId);
+		
+		if(op.isEmpty()) {
+			// data not found
+		} else {
+			//data found
+			CityEntity city = op.get();
+			
+			model.addAttribute("city", city);
+		}
+		
+		return "ViewCity";
+	}
+	
+	@GetMapping("deletecity")
+	public String deleteCity(Integer cityId) {
+		
+		repoCity.deleteById(cityId);
+		
+		return "redirect:/listcity";
 	}
 }

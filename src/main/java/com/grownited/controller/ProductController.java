@@ -1,5 +1,6 @@
 package com.grownited.controller;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,6 +43,8 @@ public class ProductController {
 	
 	@PostMapping("saveproduct")
 	public String saveProduct(ProductEntity productEntity) {
+		
+		productEntity.setCreatedAt(new Date());
 		
 		repoProduct.save(productEntity);
 		

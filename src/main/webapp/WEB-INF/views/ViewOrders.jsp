@@ -17,5 +17,7 @@
 	<br>
 	Order ID: ${order.orderId }
 	<br>
+	User ID: ${order.userId }
+	<br>
 </body>
 </html>

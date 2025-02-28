@@ -27,49 +27,157 @@
                     
         </ul>
       </li><!-- End Users Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#7-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-list"></i><span>States</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="7-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="newstate">
+              <i class="bi bi-circle"></i><span>Add State</span>
+            </a>
+          </li>
+          <li>
+            <a href="liststate">
+              <i class="bi bi-circle"></i><span>List State</span>
+            </a>
+          </li>
+                    
+        </ul>
+      </li><!-- End States Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#8-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-joystick"></i><span>Cities</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="8-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="newcity">
+              <i class="bi bi-circle"></i><span>Add City</span>
+            </a>
+          </li>
+          <li>
+            <a href="listcity">
+              <i class="bi bi-circle"></i><span>List City</span>
+            </a>
+          </li>
+                    
+        </ul>
+      </li><!-- End Cities Nav -->
 
    
-
-      <li class="nav-item">
+      <li class="nav-item"><!-- i have used #tables-nav -->
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-opencollective"></i><span>Orders</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
+            <a href="listorder">
+              <i class="bi bi-circle"></i><span>List Orders</span>
             </a>
           </li>
           <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
+            <a href="listorderdetail">
+              <i class="bi bi-circle"></i><span>List Orders Detail</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Tables Nav -->
+      </li><!-- End Orders Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#4-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-cart"></i><span>Cart</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="4-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="listcart">
+              <i class="bi bi-circle"></i><span>List Cart</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Orders Nav -->
+      
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" data-bs-target="#5-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Category</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
+        <ul id="5-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+           <li>
+            <a href="category">
+              <i class="bi bi-circle"></i><span>Add Category</span>
             </a>
           </li>
           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
+            <a href="listcategory">
+              <i class="bi bi-circle"></i><span>List Category</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Charts Nav -->
+      </li><!-- End Category Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#2-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart-steps"></i><span>Sub Category</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="2-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="subcategory">
+              <i class="bi bi-circle"></i><span>Add Sub Category</span>
+            </a>
+          </li>
+          <li>
+            <a href="listsubcategory">
+              <i class="bi bi-circle"></i><span>List Sub Category</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Sub Category Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#3-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bag"></i><span>Products</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="3-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="newproduct">
+              <i class="bi bi-circle"></i><span>Add Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="listproduct">
+              <i class="bi bi-circle"></i><span>List Products</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Products Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#1-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-book"></i><span>Reviews</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="1-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="listreviews">
+              <i class="bi bi-circle"></i><span>List Reviews</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Reviews Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#6-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-heart-fill"></i><span>Wishlist</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="6-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="listreviews">
+              <i class="bi bi-circle"></i><span>List Wishlists</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Wishlists Nav -->
 
       
 

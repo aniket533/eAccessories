@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>List Sub Category</title>
+  <title>List State</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,6 +42,7 @@
 	
 	<jsp:include page="AdminCss.jsp"></jsp:include>
 	
+	<!-- Template Table CSS File -->
 	<link  href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
 
 </head>
@@ -53,11 +54,11 @@
 	<main id="main" class="main">
 
 		<div class="pagetitle">
-			<h1>List Sub Category</h1>
+			<h1>List State</h1>
 			<nav>
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="admindashboard">Home</a></li>
-					<li class="breadcrumb-item active">List Sub Category</li>
+					<li class="breadcrumb-item active">List State</li>
 				</ol>
 			</nav>
 		</div>
@@ -76,24 +77,23 @@
 
 								<div class="card-body">
 									<h5 class="card-title">
-										Sub Categories<span>/all</span>
+										States<span>/all</span>
 									</h5>
 
 
 									<table class="table datatable datatable-table table-hover" id="myTable">
 										<thead>
 											<tr>
-												<th>Sub Category</th>
+												<th>State Name</th>
 												<th>Action</th>
 											</tr>
-
 										</thead>
 
 										<tbody>
-											<c:forEach items="${subCategoryList }" var="a">
+											<c:forEach items="${stateList}" var="st">
 												<tr>
-													<td>${a.subCategoryName }</td>
-													<td><a href="viewsubcategory?subCategoryId=${a.subCategoryId }">View</a> | <a href="deletesubcategory?subCategoryId=${a.subCategoryId }">Delete</a> | <a href="#">Edit</a></td>
+													<td>${st.stateName}</td>
+													<td><a href="viewstate?stateId=${st.stateId}">View</a> |<a href="deletestate?stateId=${st.stateId}">Delete</a>| <a href="#">Edit</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>
