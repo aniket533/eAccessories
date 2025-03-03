@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-
+import com.grownited.dto.CityDto;
 import com.grownited.entity.CityEntity;
 import com.grownited.entity.StateEntity;
 import com.grownited.repository.CityRepository;
@@ -46,7 +46,7 @@ public class CityController {
 	@GetMapping("listcity")
 	public String listCity(Model model) {
 		
-		List<CityEntity> cityList = repoCity.findAll();
+		List<CityDto> cityList = repoCity.getAll();
 		
 		model.addAttribute("cityList", cityList);
 		
