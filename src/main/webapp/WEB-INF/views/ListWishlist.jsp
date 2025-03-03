@@ -84,6 +84,8 @@
 									<table class="table datatable datatable-table table-hover" id="myTable">
 										<thead>
 											<tr>
+												<th>Product Name</th>
+												<th>Offer Price</th>
 												<th>Created At</th>
 												<th>Action</th>
 											</tr>
@@ -92,8 +94,10 @@
 										<tbody>
 											<c:forEach items="${wishlistList }" var="w">
 												<tr>
+													<td>${w.productName }</td>
+													<td>${w.offerPrice }</td>
 													<td>${w.createdAt }</td>
-													<td><a href="viewwishlist?wishlistId=${w.wishlistId }">View</a> | <a href="deletewishlist?wishlistId=${w.wishlistId }">Delete</a> | Edit</td>
+													<td><a href="viewwishlist?wishlistId=${w.wishlistId }">View</a> | <a href="deletewishlist?wishlistId=${w.wishlistId }">Delete</a> | <a href="#">Edit</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>

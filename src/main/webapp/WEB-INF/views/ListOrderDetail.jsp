@@ -83,8 +83,10 @@
 									<table class="table datatable datatable-table table-hover" id="myTable">
 										<thead>
 											<tr>
+												<th>Product Name</th>
 												<th>Quantity</th>
 												<th>Price</th>
+												<th>Offer Price</th>
 												<th>Status</th>
 												<th>Action</th>
 											</tr>
@@ -92,8 +94,10 @@
 										<tbody>
 											<c:forEach items="${orderDetailList }" var="od">
 												<tr>
+													<td>${od.productName }</td>
 													<td>${od.quantity }</td>
 													<td>${od.price }</td>
+													<td>${od.offerPrice }</td>
 													<td>${od.status }</td>
 													<td><a href="vieworderdetail?orderDetailId=${od.orderDetailId }">View</a> | <a href="deleteorderdetail?orderDetailId=${od.orderDetailId }">Delete</a> | <a href="#">Edit</a></td>
 												</tr>

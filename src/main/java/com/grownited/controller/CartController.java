@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.dto.CartDto;
 import com.grownited.entity.CartEntity;
 import com.grownited.entity.ProductEntity;
 import com.grownited.entity.UserEntity;
@@ -31,10 +32,11 @@ public class CartController {
 	UserRepository repoUser;
 	
 	@GetMapping("cart")
-	public String cart() {
+	public String cart(Model model) {
 		
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
+		model.addAttribute("allProduct", allProduct);
 		
 		return "NewCart";
 	}
@@ -55,7 +57,7 @@ public class CartController {
 	@GetMapping("listcart")
 	public String listCart(Model model) {
 		
-		List<CartEntity> cartList = repoCart.findAll();  // select * query
+		List<CartDto> cartList = repoCart.getAll();  // select * query
 		
 		model.addAttribute("cartList", cartList);
 		

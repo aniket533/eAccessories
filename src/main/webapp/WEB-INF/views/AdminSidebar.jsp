@@ -172,7 +172,7 @@
         </a>
         <ul id="6-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="listreviews">
+            <a href="listwishlist">
               <i class="bi bi-circle"></i><span>List Wishlists</span>
             </a>
           </li>

@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.dto.ReviewDto;
 import com.grownited.entity.ProductEntity;
 import com.grownited.entity.ReviewsEntity;
 import com.grownited.entity.UserEntity;
@@ -30,9 +31,10 @@ public class ReviewsController {
 	ProductRepository repoProduct;
 	
 	@GetMapping("reviews")
-	public String reviews() {
+	public String reviews(Model model) {
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
+		model.addAttribute("allProduct", allProduct);
 		
 		return "Reviews";
 	}
@@ -53,7 +55,7 @@ public class ReviewsController {
 	@GetMapping("listreviews")
 	public String listReviews(Model model) {
 		
-		List<ReviewsEntity> reviewsList = repoReviews.findAll();
+		List<ReviewDto> reviewsList = repoReviews.getAll();
 		
 		model.addAttribute("reviewsList", reviewsList);
 		

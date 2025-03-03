@@ -75,13 +75,15 @@
 							 
 								<div class="card-body">
 									<h5 class="card-title">
-										Carts <span>All</span>
+										Carts <span>/All</span>
 									</h5>
 
 									<table class="table datatable datatable-table table-hover" id="myTable">
 										<thead>
 											<tr>
 												<th>Quantity</th>
+												<th>Product Name</th>
+												<th>Offer Price</th>
 												<th>Action</th>
 											</tr>
 										</thead>
@@ -89,6 +91,8 @@
 											<c:forEach items="${cartList}" var="c">
 												<tr>
 													<td>${c.quantity}</td>
+													<td>${c.productName}</td>
+													<td>${c.offerPrice}</td>
 													<td><a href="viewcart?cartId=${c.cartId }">View</a> | <a href="deletecart?cartId=${c.cartId }">Delete</a> | <a href="#">Edit</a></td>
 												</tr>
 											</c:forEach>

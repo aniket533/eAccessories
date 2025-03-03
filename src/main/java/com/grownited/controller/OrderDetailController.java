@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.grownited.dto.OrderDetailDto;
 import com.grownited.entity.OrderDetailEntity;
 import com.grownited.entity.OrdersEntity;
 import com.grownited.entity.ProductEntity;
@@ -29,9 +30,11 @@ public class OrderDetailController {
 	OrdersRepository repoOrder;
 	
 	@GetMapping("orderdetail")
-	public String orderDetail() {
+	public String orderDetail(Model model) {
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
+		model.addAttribute("allProduct", allProduct);
+		
 		
 		List<OrdersEntity> allOrder = repoOrder.findAll();
 		
@@ -48,7 +51,7 @@ public class OrderDetailController {
 	@GetMapping("listorderdetail")
 	public String listOrderDetail(Model model) {
 		
-		List<OrderDetailEntity> orderDetailList = repoOrderDetail.findAll();
+		List<OrderDetailDto> orderDetailList = repoOrderDetail.getAll();
 		
 		model.addAttribute("orderDetailList", orderDetailList);
 		

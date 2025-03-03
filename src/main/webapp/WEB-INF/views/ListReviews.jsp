@@ -84,6 +84,7 @@
 									<table class="table datatable datatable-table table-hover" id="myTable">
 										<thead>
 											<tr>
+												<th>Product Name</th>
 												<th>Review</th>
 												<th>Rating</th>
 												<th>Created At</th>
@@ -94,6 +95,7 @@
 										<tbody>
 											<c:forEach items="${reviewsList }" var="r">
 												<tr>
+													<td>${r.productName }</td>
 													<td>${r.reviewText }</td>
 													<td>${r.rating }</td>
 													<td>${r.createdAt }</td>
