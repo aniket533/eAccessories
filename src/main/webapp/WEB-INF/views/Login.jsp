@@ -94,6 +94,14 @@
                     </div>
                   </form>
 
+				  <div class="small mb-0">    
+					    <a href = "forgotpassword">Forgot Password</a>
+					    
+					   <!-- ${error } --> 
+					    
+					    
+					    
+				  </div>		
                 </div>
               </div>
 

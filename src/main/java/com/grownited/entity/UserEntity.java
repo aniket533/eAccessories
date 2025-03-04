@@ -27,7 +27,14 @@ public class UserEntity {
 	private String role;  // buyer, seller, admin
 	private Date createdAt;  // X -> today's date(default value)
 	private Boolean active; // X -> true(default value)
+	private String otp;
 	
+	public String getOtp() {
+		return otp;
+	}
+	public void setOtp(String otp) {
+		this.otp = otp;
+	}
 	public Integer getUserId() {
 		return userId;
 	}
