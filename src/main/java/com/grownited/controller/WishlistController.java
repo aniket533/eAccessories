@@ -29,7 +29,7 @@ public class WishlistController {
 	@Autowired
 	ProductRepository repoProduct;
 	
-	@GetMapping("wishlist")
+	@GetMapping("newwishlist")
 	public String wishlist(Model model) {
 		
 		

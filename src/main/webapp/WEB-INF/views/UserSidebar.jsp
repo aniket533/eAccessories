@@ -3,41 +3,18 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="admindashboard">
+        <a class="nav-link " href="home">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>User Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Users</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span>Add User</span>
-            </a>
-          </li>
-          <li>
-            <a href="listuser">
-              <i class="bi bi-circle"></i><span>List User</span>
-            </a>
-          </li>
-                    
-        </ul>
-      </li><!-- End Users Nav -->
-      
+
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#7-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-list"></i><span>States</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="7-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="newstate">
-              <i class="bi bi-circle"></i><span>Add State</span>
-            </a>
-          </li>
           <li>
             <a href="liststate">
               <i class="bi bi-circle"></i><span>List State</span>
@@ -52,11 +29,6 @@
           <i class="bi bi-joystick"></i><span>Cities</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="8-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="newcity">
-              <i class="bi bi-circle"></i><span>Add City</span>
-            </a>
-          </li>
           <li>
             <a href="listcity">
               <i class="bi bi-circle"></i><span>List City</span>
@@ -90,6 +62,11 @@
           <i class="bi bi-cart"></i><span>Cart</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="4-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="cart">
+              <i class="bi bi-circle"></i><span>Add Cart</span>
+            </a>
+          </li>
           <li>
             <a href="listcart">
               <i class="bi bi-circle"></i><span>List Cart</span>
@@ -159,6 +136,11 @@
         </a>
         <ul id="1-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
+            <a href="newreviews">
+              <i class="bi bi-circle"></i><span>Add Reviews</span>
+            </a>
+          </li>
+          <li>
             <a href="listreviews">
               <i class="bi bi-circle"></i><span>List Reviews</span>
             </a>
@@ -171,6 +153,11 @@
           <i class="bi bi-heart-fill"></i><span>Wishlist</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="6-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="newwishlist">
+              <i class="bi bi-circle"></i><span>Create Wishlists</span>
+            </a>
+          </li>
           <li>
             <a href="listwishlist">
               <i class="bi bi-circle"></i><span>List Wishlists</span>

@@ -30,7 +30,7 @@ public class ReviewsController {
 	@Autowired
 	ProductRepository repoProduct;
 	
-	@GetMapping("reviews")
+	@GetMapping("newreviews")
 	public String reviews(Model model) {
 		
 		List<ProductEntity> allProduct = repoProduct.findAll();
