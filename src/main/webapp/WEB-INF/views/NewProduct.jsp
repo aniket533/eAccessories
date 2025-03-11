@@ -81,7 +81,7 @@
 									</h5>
 
 
-									<form action="saveproduct" method="post">
+									<form action="saveproduct" method="post" encType="multipart/form-data">
 										<label for="productName">Product Name: </label>
 										<input type="text" id="productName" name="productName">
 										<br><br>
@@ -120,16 +120,16 @@
 										<input type="text" id="productDetail" name="productDetail">
 										<br><br>
 										
-										<label for="productImageURL1">Product Image URL1: </label>
-										<input type="file" id="productImageURL1" name="productImageURL1">
+										<label for="productPic1">Product Pic 1: </label>
+										<input type="file" id="productPic1" name="productPic1">
 										<br><br>
 										
-										<label for="productImageURL2">Product Image URL2: </label>
-										<input type="file" id="productImageURL2" name="productImageURL2">
+										<label for="productPic2">Product Pic 2: </label>
+										<input type="file" id="productPic2" name="productPic2">
 										<br><br>
 										
-										<label for="productImageURL3">Product Image URL3: </label>
-										<input type="file" id="productImageURL3" name="productImageURL3">
+										<label for="productPic3">Product Pic 3: </label>
+										<input type="file" id="productPic3" name="productPic3">
 										<br><br>
 										
 										<label for="quantity">Quantity: </label>

@@ -24,6 +24,7 @@ public class UserEntity {
 	private String contactNum;
 	//private String bornYear;
 	private String gender;
+	private String profilePicPath;
 	private String role;  // buyer, seller, admin
 	private Date createdAt;  // X -> today's date(default value)
 	private Boolean active; // X -> true(default value)
@@ -100,6 +101,12 @@ public class UserEntity {
 	}
 	public void setActive(Boolean active) {
 		this.active = active;
+	}
+	public String getProfilePicPath() {
+		return profilePicPath;
+	}
+	public void setProfilePicPath(String profilePicPath) {
+		this.profilePicPath = profilePicPath;
 	}
 	
 	

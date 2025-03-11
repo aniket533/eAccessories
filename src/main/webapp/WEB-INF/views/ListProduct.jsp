@@ -84,6 +84,7 @@
 										<thead>
 											<tr>
 													<th>Product Name</th>
+													<th>Product Photo</th>
 													<th>Base Price</th>
 													<th>Offer Price</th>
 													<th>Quantity</th>
@@ -97,6 +98,10 @@
 					
 												<tr>
 												<td>${m.productName }</td>
+												<td><img src="${m.productImageURL1}"  height="50px" width="50%"/>
+													<img src="${m.productImageURL2}"  height="50px" width="50%"/>
+													<img src="${m.productImageURL3}"  height="50px" width="50%"/>
+												</td>
 												<td>${m.basePrice }</td>
 												<td>${m.offerPrice }</td>
 												<td>${m.quantity }</td>

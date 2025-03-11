@@ -68,7 +68,7 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
-                  <form action="saveuser" method="post" class="row g-3 needs-validation" novalidate>
+                  <form action="saveuser" method="post" class="row g-3 needs-validation" novalidate enctype="multipart/form-data">
                     <div class="col-12">
                       <label for="firstName" class="form-label">First Name</label>
                       <input type="text" name="firstName" class="form-control" id="firstName" required>
@@ -109,6 +109,12 @@
             				<option value="female">Female</option>
             				<option value="other">Other</option>
         				</select>                    	
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="profilePic" class="form-label">Profile Picture: </label>
+                      <input type="file" name="profilePic" class="form-control" id="profilePic" required>
+                      <div class="invalid-feedback">Please provide your Profile Picture</div>
                     </div>
                     
                     <div class="col-12">
