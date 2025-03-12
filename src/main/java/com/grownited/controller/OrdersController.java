@@ -81,4 +81,40 @@ public class OrdersController {
 		repoOrders.deleteById(orderId);
 		return "redirect:/listorder";
 	}
+	
+	
+	@GetMapping("editorder")
+	public String editOrder(Integer orderId, Model model) {
+		
+		Optional<OrdersEntity> op = repoOrders.findById(orderId);
+		
+		if(op.isEmpty()) {
+			return "redirect:/listorder";
+		} else {
+			model.addAttribute("order", op.get());
+			return "EditOrder";
+		}
+	}
+	
+	
+	@PostMapping("updateorder")
+	public String updateOrder(OrdersEntity orderEntity) {
+		
+		System.out.println("OrderId" + orderEntity.getOrderId());
+		
+		Optional<OrdersEntity> op = repoOrders.findById(orderEntity.getOrderId());
+		
+		if(op.isPresent()) {
+			OrdersEntity dbOrder = op.get();
+			
+			dbOrder.setStatus(orderEntity.getStatus());
+			dbOrder.setTotalAmount(orderEntity.getTotalAmount());
+			
+			repoOrders.save(dbOrder);
+		}
+		
+		return "redirect:/listorder";
+		
+	}
+	
 }

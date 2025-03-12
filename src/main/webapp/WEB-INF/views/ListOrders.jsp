@@ -96,7 +96,7 @@
 													<td>${o.status }</td>
 													<td>${o.totalAmount }</td>
 													<td>${o.createdAt }</td>
-													<td><a href="vieworder?orderId=${o.orderId }">View</a> | <a href="deleteorder?orderId=${o.orderId }">Delete</a> | <a href="#">Edit</a></td>
+													<td><a href="vieworder?orderId=${o.orderId }">View</a> | <a href="deleteorder?orderId=${o.orderId }">Delete</a> | <a href="editorder?orderId=${o.orderId }">Edit</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>
