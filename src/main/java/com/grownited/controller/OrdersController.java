@@ -56,17 +56,21 @@ public class OrdersController {
 	@GetMapping("vieworder")
 	public String viewOrder(Integer orderId, Model model) {
 		
-		Optional<OrdersEntity> op = repoOrders.findById(orderId);
 		
-		if(op.isEmpty()) {
+	//	Optional<OrdersEntity> op = repoOrders.findById(orderId);
+		
+	//	if(op.isEmpty()) {
 			//data not found
-		} else {
+	//	} else {
 			//data found
-			OrdersEntity order = op.get();
+		//	OrdersEntity order = op.get();
 			
 			//send data to jsp
-			model.addAttribute("order", order);
-		}
+		//	model.addAttribute("order", order);
+	//	}
+		
+		List<Object[]> op = repoOrders.getByOrderId(orderId);
+		model.addAttribute("order", op);
 		
 		return "ViewOrders";
 	}

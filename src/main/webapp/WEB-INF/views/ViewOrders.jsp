@@ -9,15 +9,17 @@
 <body>
 	<h2>View Orders</h2>
 	
-	Status: ${order.status }
+	Status: ${order[0][2] }
 	<br>
-	Total Amount: ${order.totalAmount }
+	Total Amount: ${order[0][3] }
 	<br>
-	Created At: ${order.createdAt }
+	Created At: ${order[0][1] }
 	<br>
-	Order ID: ${order.orderId }
+	Order ID: ${order[0][0] }
 	<br>
-	User ID: ${order.userId }
+	First Name: ${order[0][5] }
+	<br>
+	Last Name: ${order[0][6] }
 	<br>
 </body>
 </html>

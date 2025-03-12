@@ -25,11 +25,11 @@
 	<br>
 	Product Detail: ${product.productDetail }
 	<br>
-	Product Image1: ${product.productImageURL1 }
+	Product Image1: <img src="${product.productImageURL1}"  height="50px" width="50px"/>
 	<br>
-	Product Image2: ${product.productImageURL2 }
+	Product Image2: <img src="${product.productImageURL2}"  height="50px" width="50px"/>
 	<br>
-	Product Image3: ${product.productImageURL3 }
+	Product Image3: <img src="${product.productImageURL3}"  height="50px" width="50px"/>
 	<br>
 	Quantity: ${product.quantity }
 	<br>
