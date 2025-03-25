@@ -515,110 +515,110 @@
                         <div class="vesitable-img">
                             <img src="fruit/img/health_therapy_sleep_sound.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Health</div>
                         <div class="p-4 rounded-bottom">
                             <h4>Therapy Sleep</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;999</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/beauty_rechargable_comb.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Beauty</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
+                            <h4>Rechargable Comb</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;1999</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            <img src="fruit/img/beauty_hanger.webp" class="img-fluid w-100 rounded-top bg-light" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Beauty</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Banana</h4>
+                            <h4>Hanger</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;499</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/beauty_electric_nail_cutter.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Beauty</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Bell Papper</h4>
+                            <h4>Electric Nail Cutter</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;649</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/home_keychain_knife_cutter.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Home</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Potatoes</h4>
+                            <h4>Box cutter knife</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;149</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/study_desk_lamp.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Lamp/Study</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
+                            <h4>Desk lamp</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;1199</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/travel_anti_theift_bag.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Travel</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Potatoes</h4>
+                            <h4>Anti Theft Bag</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;999</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="fruit/img/travel_car_interior_cleaner_brush.webp" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Travel</div>
                         <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
+                            <h4>Puffin Brush</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;99</p>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
@@ -635,7 +635,7 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
                         <div class="py-4">
-                            <h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
+                            <h1 class="display-3 text-white">Best Gadgets</h1>
                             <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
                             <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
                             <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
@@ -643,12 +643,11 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img src="fruit/img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+                            <img src="fruit/img/health_relief_gell_cap.webp" class="img-fluid w-100 rounded" alt="">
                             <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
                                 <h1 style="font-size: 100px;">1</h1>
                                 <div class="d-flex flex-column">
-                                    <span class="h2 mb-0">50$</span>
-                                    <span class="h4 text-muted mb-0">kg</span>
+                                    <span class="h2 mb-0">500&#8377;</span>
                                 </div>
                             </div>
                         </div>
@@ -670,10 +669,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/home_keychain_knife_cutter.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Box cutter knife</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -681,7 +680,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;149</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -691,10 +690,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-2.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/travel_car_interior_cleaner_brush.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Puffin brush</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -702,7 +701,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;99</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -712,10 +711,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-3.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/travel_anti_theift_bag.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Anti theft bag</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -723,7 +722,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;999</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -733,10 +732,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-4.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/study_desk_lamp.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Desk lamp</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -744,7 +743,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;1199</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -754,10 +753,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-5.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/beauty_electric_nail_cutter.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Electric nail cutter</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -765,7 +764,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;649</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -775,10 +774,10 @@
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <img src="fruit/img/best-product-6.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="fruit/img/clocky-1000x1000.webp" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="h5">Organic Tomato</a>
+                                    <a href="#" class="h5">Clocky</a>
                                     <div class="d-flex my-3">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -786,7 +785,7 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="mb-3">3.12 $</h4>
+                                    <h4 class="mb-3">&#8377;1149</h4>
                                     <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                 </div>
                             </div>
@@ -794,9 +793,9 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="text-center">
-                            <img src="fruit/img/fruite-item-1.jpg" class="img-fluid rounded" alt="">
+                            <img src="fruit/img/gooblemini_rgb_lamp.webp" class="img-fluid rounded" alt="">
                             <div class="py-4">
-                                <a href="#" class="h5">Organic Tomato</a>
+                                <a href="#" class="h5">RGB lamp</a>
                                 <div class="d-flex my-3 justify-content-center">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -804,16 +803,16 @@
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h4 class="mb-3">3.12 $</h4>
+                                <h4 class="mb-3">&#8377;1999</h4>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="text-center">
-                            <img src="fruit/img/fruite-item-2.jpg" class="img-fluid rounded" alt="">
+                            <img src="fruit/img/travel_car_air_freshner.webp" class="img-fluid rounded" alt="">
                             <div class="py-4">
-                                <a href="#" class="h5">Organic Tomato</a>
+                                <a href="#" class="h5">Breezemini</a>
                                 <div class="d-flex my-3 justify-content-center">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -821,16 +820,16 @@
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h4 class="mb-3">3.12 $</h4>
+                                <h4 class="mb-3">&#8377;449</h4>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="text-center">
-                            <img src="fruit/img/fruite-item-3.jpg" class="img-fluid rounded" alt="">
+                            <img src="fruit/img/lamp_beyond_rgb.webp" class="img-fluid rounded" alt="">
                             <div class="py-4">
-                                <a href="#" class="h5">Organic Tomato</a>
+                                <a href="#" class="h5">Beyond- RGB LED lamp</a>
                                 <div class="d-flex my-3 justify-content-center">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -838,16 +837,16 @@
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h4 class="mb-3">3.12 $</h4>
+                                <h4 class="mb-3">&#8377;2499</h4>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="text-center">
-                            <img src="fruit/img/fruite-item-4.jpg" class="img-fluid rounded" alt="">
+                            <img src="fruit/img/marshall_key_holder.webp" class="img-fluid rounded" alt="">
                             <div class="py-2">
-                                <a href="#" class="h5">Organic Tomato</a>
+                                <a href="#" class="h5">Marshall Key holder</a>
                                 <div class="d-flex my-3 justify-content-center">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -855,7 +854,7 @@
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h4 class="mb-3">3.12 $</h4>
+                                <h4 class="mb-3">&#8377;999</h4>
                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
@@ -911,11 +910,8 @@
                     <h4 class="text-primary">Our Testimonial</h4>
                     <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
                 </div>
-                <div class="owl-carousel testimonial-carousel owl-loaded owl-drag">
-                    
-                    
-                    
-                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1141px, 0px, 0px); transition: 2s; width: 3994px;"><div class="owl-item cloned" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
                         <div class="position-relative">
                             <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
                             <div class="mb-4 pb-4 border-bottom border-secondary">
@@ -927,56 +923,8 @@
                                     <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="owl-item cloned" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
+                                    <h4 class="text-dark">Kate Christine</h4>
+                                    <p class="m-0 pb-3">Professor</p>
                                     <div class="d-flex pe-5">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -987,7 +935,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div></div><div class="owl-item active" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
                         <div class="position-relative">
                             <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
                             <div class="mb-4 pb-4 border-bottom border-secondary">
@@ -996,11 +945,11 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    <img src="fruit/img/student.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
+                                    <h4 class="text-dark">John Doe</h4>
+                                    <p class="m-0 pb-3">Student</p>
                                     <div class="d-flex pe-5">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -1011,7 +960,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div></div><div class="owl-item" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
                         <div class="position-relative">
                             <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
                             <div class="mb-4 pb-4 border-bottom border-secondary">
@@ -1020,11 +970,11 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    <img src="fruit/img/truck_driver.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
+                                    <h4 class="text-dark">Philip Kart</h4>
+                                    <p class="m-0 pb-3">Truck Driver</p>
                                     <div class="d-flex pe-5">
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star text-primary"></i>
@@ -1035,55 +985,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div></div><div class="owl-item cloned" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="owl-item cloned" style="width: 545.5px; margin-right: 25px;"><div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="bi bi-arrow-left"></i></div><div class="owl-next"><i class="bi bi-arrow-right"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    </div>
+                </div>
             </div>
         </div>
 	<!-- tastimonial ends -->
