@@ -91,4 +91,19 @@ public class CartController {
 		
 		return "redirect:/listcart";
 	}
+	
+	
+	@GetMapping("editcart")
+	public String editCart(Integer cartId, Model model) {
+		
+		Optional<CartEntity> op = repoCart.findById(cartId);
+		System.out.println(op.toString());
+		if(op.isEmpty()) {
+			return "redirect:/listcart";
+		} else {
+			model.addAttribute("cart", op.get());
+			return "EditCart";
+		}
+		
+	}
 }

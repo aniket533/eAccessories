@@ -31,7 +31,7 @@ public class StateController {
 		
 		repoState.save(state);//insert query for hibernate
 		
-		return "NewState";
+		return "ListState";
 	}
 	
 	@GetMapping("liststate")
@@ -67,4 +67,35 @@ public class StateController {
 		
 		return "redirect:/liststate";
 	}
+	
+	@GetMapping("editstate")
+	public String editState(Integer stateId, Model model) {
+		
+		Optional<StateEntity> op = repoState.findById(stateId);
+		
+		if(op.isEmpty()) {
+			return "redirect:/liststate";
+		} else {
+			model.addAttribute("state", op.get());
+			return "EditState";
+		}
+	}
+	
+	
+	@PostMapping("updatestate")
+	public String updateState(StateEntity stateEntity) {
+		//System.out.println("StateId" + stateEntity.getStateId());
+		
+		Optional<StateEntity> op = repoState.findById(stateEntity.getStateId());
+		
+		if(op.isPresent()) {
+			StateEntity dbState = op.get();
+			
+			dbState.setStateName(stateEntity.getStateName());
+			
+			repoState.save(dbState);
+		}
+		return "redirect:/liststate";
+	}
+	
 }

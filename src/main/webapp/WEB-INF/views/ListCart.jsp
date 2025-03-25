@@ -93,7 +93,7 @@
 													<td>${c.quantity}</td>
 													<td>${c.productName}</td>
 													<td>${c.offerPrice}</td>
-													<td><a href="viewcart?cartId=${c.cartId }">View</a> | <a href="deletecart?cartId=${c.cartId }">Delete</a> | <a href="#">Edit</a></td>
+													<td><a href="viewcart?cartId=${c.cartId }">View</a> | <a href="deletecart?cartId=${c.cartId }">Delete</a> | <a href="editcart?cartId=${c.cartId }">Edit</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>

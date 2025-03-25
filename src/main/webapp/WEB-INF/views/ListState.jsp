@@ -93,7 +93,7 @@
 											<c:forEach items="${stateList}" var="st">
 												<tr>
 													<td>${st.stateName}</td>
-													<td><a href="viewstate?stateId=${st.stateId}">View</a> |<a href="deletestate?stateId=${st.stateId}">Delete</a>| <a href="#">Edit</a></td>
+													<td><a href="viewstate?stateId=${st.stateId}">View</a> |<a href="deletestate?stateId=${st.stateId}">Delete</a>| <a href="editstate?stateId=${st.stateId }">Edit</a></td>
 												</tr>
 											</c:forEach>
 										</tbody>
