@@ -998,7 +998,6 @@
 	
 	
 	<jsp:include page="UserFooter.jsp"></jsp:include>
-	
 	<jsp:include page="UserJS.jsp"></jsp:include>
 </body>
 </html>
