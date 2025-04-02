@@ -41,7 +41,7 @@
                                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
                             </a>
                             
-                         	<a href="edituser?userId=${u.userId }" class="my-auto"> 
+                         	<a href="#" class="my-auto"> 
                          		<i class="fas fa-user fa-2x"></i>
                             </a> 
                             

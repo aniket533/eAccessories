@@ -132,7 +132,7 @@ public class SessionController {
 					 
 				} else if(dbUser.getRole().equals("USER")) {
 					
-					return "redirect:/home";
+					return "redirect:/userhome";
 					
 				} else {
 					

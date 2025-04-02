@@ -14,81 +14,8 @@
             <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
-    
-    <!-- header starts -->	
-	<div class="container-fluid fixed-top" style="top: 0px;">
-            <div class="container topbar bg-primary d-none d-lg-block">
-                <div class="d-flex justify-content-between">
-                    <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="contact" class="text-white">Navarangpura, Ahmedabad</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="contact" class="text-white">kk4766670@gmail.com</a></small>
-                    </div>
-                    <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-0">
-                <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="home" class="navbar-brand"><h1 class="text-primary display-6">Gadgets Marketplace</h1></a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="home" class="nav-item nav-link active">Home</a>
-                            <a href="login" class="nav-item nav-link">Shop</a>
-                            <a href="login" class="nav-item nav-link">Shop Detail</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="login" class="dropdown-item">Cart</a>
-                                    <a href="login" class="dropdown-item">Chackout</a>
-                                    <a href="login" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="login" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            
-                         	<a href="login" class="my-auto"> 
-                         		<i class="fas fa-user fa-2x"></i>
-                            </a> 
-                            
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-     
-     	<!-- Header Ends -->   
-     
-        <!-- modal start -->
-       	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <!-- modal end -->
+	
+	<jsp:include page="UserHeader.jsp"></jsp:include>
 	
 	
 	<!-- hero start -->
@@ -103,17 +30,16 @@
                             <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
                         </div>
                     </div>
-                    
                     <div class="col-md-12 col-lg-5">
                         <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item rounded">
                                     <img src="fruit/img/gooblemini_rgb_lamp.webp" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-                                    <a href="login" class="btn px-4 py-2 text-white rounded">Lamps & Lighting</a>
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">Lamps & Lighting</a>
                                 </div>
                                 <div class="carousel-item rounded active">
                                     <img src="fruit/img/clocky-1000x1000.webp" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                                    <a href="login" class="btn px-4 py-2 text-white rounded">Creative & Stationary</a>
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">Creative & Stationary</a>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
@@ -477,7 +403,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">&#8377;699</p>
-                                                        <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -539,7 +465,7 @@
             <div class="container py-5">
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4">
-                        <a href="login">
+                        <a href="#">
                             <div class="service-item bg-secondary rounded border border-secondary">
                                 <img src="fruit/img/travel_flashlight_gloves.webp" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -552,7 +478,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <a href="login">
+                        <a href="#">
                             <div class="service-item bg-dark rounded border border-dark">
                                 <img src="fruit/img/RainCloudAirHumidifierandEssentialOilDiffuserSpecs.webp" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -565,7 +491,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <a href="login">
+                        <a href="#">
                             <div class="service-item bg-primary rounded border border-primary">
                                 <img src="fruit/img/health_relief_gell_cap.webp" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -598,7 +524,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;999</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -612,7 +538,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;1999</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -626,7 +552,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;499</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -640,7 +566,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;649</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -654,7 +580,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;149</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -668,7 +594,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;1199</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -682,7 +608,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;999</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -696,7 +622,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">&#8377;99</p>
-                                <a href="login" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -715,7 +641,7 @@
                             <h1 class="display-3 text-white">Best Gadgets</h1>
                             <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
                             <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
-                            <a href="login" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
                         </div>
                     </div>
                     <div class="col-lg-6">

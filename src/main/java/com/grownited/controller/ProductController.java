@@ -56,7 +56,7 @@ public class ProductController {
 		System.out.println(productPic2.getOriginalFilename());
 		System.out.println(productPic3.getOriginalFilename());
 		
-		if((productPic1.getOriginalFilename().endsWith(".jpg") || productPic1.getOriginalFilename().endsWith(".png") || productPic1.getOriginalFilename().endsWith(".jpeg")) && (productPic2.getOriginalFilename().endsWith(".jpg") || productPic2.getOriginalFilename().endsWith(".png") || productPic2.getOriginalFilename().endsWith(".jpeg")) && (productPic3.getOriginalFilename().endsWith(".jpg") || productPic3.getOriginalFilename().endsWith(".png") || productPic3.getOriginalFilename().endsWith(".jpeg"))) {
+		if((productPic1.getOriginalFilename().endsWith(".jpg") ||productPic1.getOriginalFilename().endsWith(".webp") || productPic1.getOriginalFilename().endsWith(".png") || productPic1.getOriginalFilename().endsWith(".jpeg")) && (productPic2.getOriginalFilename().endsWith(".jpg")|| productPic2.getOriginalFilename().endsWith(".webp") || productPic2.getOriginalFilename().endsWith(".png") || productPic2.getOriginalFilename().endsWith(".jpeg")) && (productPic3.getOriginalFilename().endsWith(".jpg") || productPic3.getOriginalFilename().endsWith(".webp") || productPic3.getOriginalFilename().endsWith(".png") || productPic3.getOriginalFilename().endsWith(".jpeg"))) {
 			
 			try {
 				// product1

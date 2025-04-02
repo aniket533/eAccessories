@@ -28,6 +28,7 @@ public class LoginCheckFilter implements Filter {
  		publicURL.add("/sendotp");
  		publicURL.add("/authenticate");
  		publicURL.add("/logout");
+ 		publicURL.add("/home");
  		publicURL.add("/updatepassword");
  
  	}
