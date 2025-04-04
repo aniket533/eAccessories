@@ -41,10 +41,45 @@
                                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
                             </a>
                             
-                         	<a href="#" class="my-auto"> 
+                         	<!-- <a href="#" class="my-auto"> 
                          		<i class="fas fa-user fa-2x"></i>
                             </a> 
-                            
+                             -->
+                             
+                             <!-- Profile Component -->
+					<div class="nav-item dropdown">
+						<a class="nav-link nav-profile d-flex align-items-center" href="#"
+							data-bs-toggle="dropdown"> <img src="${user.profilePicPath}"
+							alt="Profile" class="rounded-circle"
+							style="width: 40px; height: 40px;"> <span
+							class="d-none d-md-block dropdown-toggle ps-2">${user.firstName}</span>
+						</a>
+						<!-- Profile Dropdown Menu -->
+
+						<ul
+							class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+							<li class="dropdown-header">
+								<h6>${user.firstName}</h6> <span>${user.role}</span>
+							</li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item d-flex align-items-center"
+								href="profile"> <i class="bi bi-person"></i> <span>My
+										Profile</span></a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item d-flex align-items-center"
+								href="profile"> <i class="bi bi-gear"></i> <span>Account
+										Settings</span></a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item d-flex align-items-center"
+								href="contact"> <i class="bi bi-question-circle"></i> <span>Need
+										Help?</span></a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item d-flex align-items-center"
+								href="logout"> <i class="bi bi-box-arrow-right"></i> <span>Sign
+										Out</span></a></li>
+						</ul>
+					</div>
+					<!-- End Profile Component -->       
                         </div>
                     </div>
                 </nav>

@@ -21,3 +21,38 @@
 
         <!-- Template Stylesheet -->
         <link href="fruit/css/style.css" rel="stylesheet">
+        
+        
+        
+        <style>
+			/* For the profile Icons */
+			.nav-profile img {
+				border: 2px solid #ddd;
+				padding: 2px;
+				width: 40px;
+				height: 40px;
+			}
+			
+			.dropdown-menu.profile {
+				min-width: 200px;
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+			}
+			/* Center the profile container */
+			.profile-container {
+				max-width: 600px;
+				background: #fff;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				margin-top: 155px; /* Push content below header */
+				text-align: center;
+			}
+			
+			.profile-img {
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-bottom: 15px;
+			}
+		</style>

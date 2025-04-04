@@ -10,8 +10,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
@@ -211,6 +213,59 @@ public class SessionController {
 		session.invalidate();
 		
 		return "redirect:login";
+	}
+	
+	
+	@GetMapping("profile")
+	public String showProfile(Model model, HttpSession session) {
+		UserEntity user = (UserEntity) session.getAttribute("user");
+
+		if (user == null) {
+			return "redirect:/login"; // Redirect to login if user is not logged in
+		}
+
+		model.addAttribute("user", user);
+		return "Profile"; // JSP page name
+
+	}
+	
+	
+	
+	@PostMapping("updateprofile")
+	public String updateProfile(@ModelAttribute UserEntity userEntity, MultipartFile profilePic,
+			RedirectAttributes redirectAttributes, HttpSession session) {
+
+		Optional<UserEntity> op = repoUser.findById(userEntity.getUserId());
+
+		if (op.isPresent()) {
+			UserEntity dbUsers = op.get();
+			dbUsers.setFirstName(userEntity.getFirstName());
+			dbUsers.setLastName(userEntity.getLastName());
+			dbUsers.setEmail(userEntity.getEmail());
+			dbUsers.setContactNum(userEntity.getContactNum());
+			dbUsers.setGender(userEntity.getGender());
+
+			if (profilePic != null && !profilePic.isEmpty()) {
+				String fileName = profilePic.getOriginalFilename().toLowerCase();
+				if (fileName.endsWith(".jpg") || fileName.endsWith(".png") || fileName.endsWith(".jpeg")) {
+					try {
+						Map result = cloudinary.uploader().upload(profilePic.getBytes(), ObjectUtils.emptyMap());
+						dbUsers.setProfilePicPath(result.get("url").toString());
+					} catch (IOException e) {
+						redirectAttributes.addFlashAttribute("error", "Image upload failed!");
+						return "redirect:/profile";
+						// e.printStackTrace();
+					}
+				}
+			}
+
+			repoUser.save(dbUsers);
+			session.setAttribute("user", dbUsers);
+			redirectAttributes.addFlashAttribute("success", "Profile updated successfully!");
+		} else {
+			redirectAttributes.addFlashAttribute("error", "User not found!");
+		}
+		return "redirect:/profile";
 	}
 	
 }
