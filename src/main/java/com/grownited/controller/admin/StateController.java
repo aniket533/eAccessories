@@ -20,7 +20,7 @@ public class StateController {
 	@Autowired
 	StateRepository repoState;  // object of StateRepository interface
 	
-	@GetMapping("newstate")
+	@GetMapping("adminnewstate")
 	public String newState() {
 		return "NewState";
 	}
@@ -34,7 +34,7 @@ public class StateController {
 		return "ListState";
 	}
 	
-	@GetMapping("liststate")
+	@GetMapping("adminliststate")
 	public String listState(Model model) {
 		
 		List<StateEntity> stateList = repoState.findAll();

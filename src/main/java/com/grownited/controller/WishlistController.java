@@ -51,7 +51,7 @@ public class WishlistController {
 		return "redirect:/listwishlist";
 	}
 	
-	@GetMapping("listwishlist")
+	@GetMapping("adminlistwishlist")
 	public String listWishlist(Model model) {
 		
 		List<WishlistDto> wishlistList = repoWishlist.getAll();

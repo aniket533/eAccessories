@@ -20,7 +20,7 @@
             </a>
           </li>
           <li>
-            <a href="listuser">
+            <a href="adminlistuser">
               <i class="bi bi-circle"></i><span>List User</span>
             </a>
           </li>
@@ -34,12 +34,12 @@
         </a>
         <ul id="7-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="newstate">
+            <a href="adminnewstate">
               <i class="bi bi-circle"></i><span>Add State</span>
             </a>
           </li>
           <li>
-            <a href="liststate">
+            <a href="adminliststate">
               <i class="bi bi-circle"></i><span>List State</span>
             </a>
           </li>
@@ -53,12 +53,12 @@
         </a>
         <ul id="8-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="newcity">
+            <a href="adminnewcity">
               <i class="bi bi-circle"></i><span>Add City</span>
             </a>
           </li>
           <li>
-            <a href="listcity">
+            <a href="adminlistcity">
               <i class="bi bi-circle"></i><span>List City</span>
             </a>
           </li>
@@ -73,12 +73,12 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="listorder">
+            <a href="adminlistorder">
               <i class="bi bi-circle"></i><span>List Orders</span>
             </a>
           </li>
           <li>
-            <a href="listorderdetail">
+            <a href="adminlistorderdetail">
               <i class="bi bi-circle"></i><span>List Orders Detail</span>
             </a>
           </li>
@@ -91,7 +91,7 @@
         </a>
         <ul id="4-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="listcart">
+            <a href="adminlistcart">
               <i class="bi bi-circle"></i><span>List Cart</span>
             </a>
           </li>
@@ -105,12 +105,12 @@
         </a>
         <ul id="5-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
            <li>
-            <a href="category">
+            <a href="admincategory">
               <i class="bi bi-circle"></i><span>Add Category</span>
             </a>
           </li>
           <li>
-            <a href="listcategory">
+            <a href="adminlistcategory">
               <i class="bi bi-circle"></i><span>List Category</span>
             </a>
           </li>
@@ -123,12 +123,12 @@
         </a>
         <ul id="2-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="subcategory">
+            <a href="adminsubcategory">
               <i class="bi bi-circle"></i><span>Add Sub Category</span>
             </a>
           </li>
           <li>
-            <a href="listsubcategory">
+            <a href="adminlistsubcategory">
               <i class="bi bi-circle"></i><span>List Sub Category</span>
             </a>
           </li>
@@ -141,12 +141,12 @@
         </a>
         <ul id="3-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="newproduct">
+            <a href="adminnewproduct">
               <i class="bi bi-circle"></i><span>Add Products</span>
             </a>
           </li>
           <li>
-            <a href="listproduct">
+            <a href="adminlistproduct">
               <i class="bi bi-circle"></i><span>List Products</span>
             </a>
           </li>
@@ -159,7 +159,7 @@
         </a>
         <ul id="1-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="listreviews">
+            <a href="adminlistreviews">
               <i class="bi bi-circle"></i><span>List Reviews</span>
             </a>
           </li>
@@ -172,7 +172,7 @@
         </a>
         <ul id="6-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="listwishlist">
+            <a href="adminlistwishlist">
               <i class="bi bi-circle"></i><span>List Wishlists</span>
             </a>
           </li>

@@ -91,7 +91,7 @@ public class AdminController {
 		return "AdminDashboard";
 	}
 	
-	@GetMapping("listuser")
+	@GetMapping("adminlistuser")
 	public String listUser(Model model) {
 		
 		List<UserEntity> users = repoUser.findAll();

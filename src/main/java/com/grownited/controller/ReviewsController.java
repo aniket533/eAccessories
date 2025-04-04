@@ -52,7 +52,7 @@ public class ReviewsController {
 		return  "redirect:/listreviews";
 	}
 	
-	@GetMapping("listreviews")
+	@GetMapping("adminlistreviews")
 	public String listReviews(Model model) {
 		
 		List<ReviewDto> reviewsList = repoReviews.getAll();

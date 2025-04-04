@@ -48,7 +48,7 @@ public class OrderDetailController {
 		return "redirect:/listorderdetail";
 	}
 	
-	@GetMapping("listorderdetail")
+	@GetMapping("adminlistorderdetail")
 	public String listOrderDetail(Model model) {
 		
 		List<OrderDetailDto> orderDetailList = repoOrderDetail.getAll();

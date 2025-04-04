@@ -24,7 +24,7 @@ public class CityController {
 	@Autowired
 	CityRepository repoCity;
 	
-	@GetMapping("newcity")
+	@GetMapping("adminnewcity")
 	public String newCity(Model model) {
 		//use state foreign key
 		//select * from state;
@@ -43,7 +43,7 @@ public class CityController {
 		return "redirect:/newcity";
 	}
 	
-	@GetMapping("listcity")
+	@GetMapping("adminlistcity")
 	public String listCity(Model model) {
 		
 		List<CityDto> cityList = repoCity.getAll();

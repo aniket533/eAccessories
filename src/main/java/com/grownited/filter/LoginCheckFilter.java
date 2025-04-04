@@ -53,8 +53,21 @@ public class LoginCheckFilter implements Filter {
 			if(user == null) {
 				req.getRequestDispatcher("login").forward(request, response);
 			} else {
-				chain.doFilter(request, response); //go ahead
-			}
+					// already login
+					// check url? amdin user
+	
+					// admin?
+					if (uri.startsWith("/admin")) {
+						if (user.getRole().equals("ADMIN")) {
+							chain.doFilter(request, response);// go Ahead
+						}else {
+							req.getRequestDispatcher("login").forward(request, response);
+						}
+					} else {
+						chain.doFilter(request, response);// go Ahead
+					}
+					// user role admin ? 
+			}//go ahead
 		}
 	}
 }

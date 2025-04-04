@@ -23,7 +23,7 @@ public class SubCategoryController {
 	@Autowired
 	CategoryRepository repoCategory;
 	
-	@GetMapping("subcategory")
+	@GetMapping("adminsubcategory")
 	public String subCategory(Model model) {
 		
 		List<CategoryEntity> allCategory = repoCategory.findAll();
@@ -42,7 +42,7 @@ public class SubCategoryController {
 	}
 	
 	
-	@GetMapping("listsubcategory")
+	@GetMapping("adminlistsubcategory")
 	public String listSubCategory(Model model) {
 		
 		List<SubCategoryEntity> subCategoryList = repoSubCategory.findAll();

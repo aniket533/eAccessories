@@ -43,7 +43,7 @@ public class OrdersController {
 		return "redirect:/listorder";
 	}
 	
-	@GetMapping("listorder")
+	@GetMapping("adminlistorder")
 	public String listOrder(Model model) {
 		
 		List<OrdersEntity> orderList = repoOrders.findAll();

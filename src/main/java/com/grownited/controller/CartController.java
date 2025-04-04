@@ -54,7 +54,7 @@ public class CartController {
 		return "redirect:/listcart";
 	}
 	
-	@GetMapping("listcart")
+	@GetMapping("adminlistcart")
 	public String listCart(Model model) {
 		
 		List<CartDto> cartList = repoCart.getAll();  // select * query

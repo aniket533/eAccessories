@@ -18,7 +18,7 @@ public class CategoryController {
 	@Autowired
 	CategoryRepository repoCategory;
 	
-	@GetMapping("category")
+	@GetMapping("admincategory")
 	public String category() {
 		return "NewCategory";
 	}
@@ -29,7 +29,7 @@ public class CategoryController {
 		return "redirect:/listcategory";
 	}
 	
-	@GetMapping("listcategory")
+	@GetMapping("adminlistcategory")
 	public String listCategory(Model model) {
 		
 		List<CategoryEntity> categoryList = repoCategory.findAll();	

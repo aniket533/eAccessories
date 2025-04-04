@@ -37,7 +37,7 @@ public class ProductController {
 	@Autowired
 	Cloudinary cloudinary;
 	
-	@GetMapping("newproduct")
+	@GetMapping("adminnewproduct")
 	public String newProduct(Model model) {
 		
 		List<CategoryEntity> allCategory = repoCategory.findAll();
@@ -88,7 +88,7 @@ public class ProductController {
 		return "redirect:/listproduct";
 	}
 	
-	@GetMapping("listproduct")
+	@GetMapping("adminlistproduct")
 	public String listProduct(Model model) {
 		List<ProductEntity> productList = repoProduct.findAll(); // select * from product, "productList" is a argument
 		
