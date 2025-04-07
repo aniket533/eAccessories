@@ -17,6 +17,8 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 	
 	List<UserEntity> findByRole(String role);
 	
+	List<UserEntity> findByRoleAndActive(String role, Boolean active);
+	
 	@Query(nativeQuery = true, value="select count(*) from users where month(created_at) = :month and role = 'USER'")
 	Integer countThisMonthUser(Integer month);
 }
