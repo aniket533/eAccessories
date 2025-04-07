@@ -44,6 +44,10 @@
 	
 	<!-- Template Table CSS File -->
 	<link  href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+	crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -87,8 +91,8 @@
 										<br><br>
 										
 										<label for="categoryName">Category: </label>
-										<select name="categoryId">
-											<option>Select Category</option>
+										<select id="categoryName" name="categoryId" required onchange="getSubCategory()">
+											<option value="-1">Select Category</option>
 											<c:forEach items="${allCategory }" var="ca">
 												<option value="${ca.categoryId }">${ca.categoryName }</option>
 											</c:forEach>
@@ -96,11 +100,11 @@
 										<br><br>
 										
 										<label for="subCategoryName">Category: </label>
-										<select name="subCategoryId">
-											<option>Select Sub Category</option>
-											<c:forEach items="${allSubCategory }" var="sc">
+										<select id="subCategoryName" name="subCategoryId">
+											<option value="-1">Select Sub Category</option>
+											<!--<c:forEach items="${allSubCategory }" var="sc">
 												<option value="${sc.subCategoryId }">${sc.subCategoryName }</option>
-											</c:forEach>
+											</c:forEach>-->
 										</select>
 										<br><br>
 										
@@ -177,6 +181,38 @@
 		let table = new DataTable('#myTable');
 	});
 	</script>
+
+	
+	 <script type="text/javascript">
+
+			function getSubCategory(){
+				console.log("category Change");
+				let categoryId = document.getElementById("categoryName").value;
+				console.log(categoryId);	
+				//url -> json REST 
+				
+				  $.get( "getallsubcategorybycategoryid/"+categoryId, function() {
+					})
+					  .done(function(data) {
+					    console.log(data);
+					    //fill the subcategory 
+					    $('#subCategoryName').empty().append('<option selected="selected" value="-1">Select SubCategory</option>')
+					    
+					    for (var i = 0; i < data.length; i++) {
+		      			  $('#subCategoryName').append('<option value="' + data[i].subCategoryId + '">' + data[i].subCategoryName + '</option>');
+		   				 }
+					    
+					  })
+					  .fail(function() {
+					    alert( "error" );
+					  })
+					  
+				
+			}
+		
+		
+	</script> 
+
 
 </body>
 </html>
