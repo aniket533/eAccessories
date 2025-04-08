@@ -1,119 +1,136 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <title>eAccessories - ecommerce gadgets marketplace</title>
-        <jsp:include page="UserCss.jsp"></jsp:include>
- </head>
+<meta charset="utf-8">
+<title>eAccessories - ecommerce gadgets marketplace</title>
+<jsp:include page="UserCss.jsp"></jsp:include>
+</head>
 <body>
-	
+
 	<!-- Spinner Start -->
-	<div id="spinner" class="w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-	
+	<div id="spinner"
+		class="w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="spinner-grow text-primary" role="status"></div>
+	</div>
+	<!-- Spinner End -->
+
 	<jsp:include page="UserHeader.jsp"></jsp:include>
-	
-	
+
+
 	<!-- hero start -->
-		<div class="container-fluid py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-12 col-lg-7">
-                        <h4 class="mb-3 text-secondary">Unique Tools</h4>
-                        <h1 class="mb-5 display-3 text-primary">Handy tools &amp; accessories</h1>
-                        <div class="position-relative mx-auto">
-                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
-                            <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-5">
-                        <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item rounded">
-                                    <img src="fruit/img/gooblemini_rgb_lamp.webp" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-                                    <a href="#" class="btn px-4 py-2 text-white rounded">Lamps & Lighting</a>
-                                </div>
-                                <div class="carousel-item rounded active">
-                                    <img src="fruit/img/clocky-1000x1000.webp" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                                    <a href="#" class="btn px-4 py-2 text-white rounded">Creative & Stationary</a>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid py-5 mb-5 hero-header">
+		<div class="container py-5">
+			<div class="row g-5 align-items-center">
+				<div class="col-md-12 col-lg-7">
+					<h4 class="mb-3 text-secondary">Unique Tools</h4>
+					<h1 class="mb-5 display-3 text-primary">Handy tools &amp;
+						accessories</h1>
+					<div class="position-relative mx-auto">
+						<input
+							class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill"
+							type="number" placeholder="Search">
+						<button type="submit"
+							class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
+							style="top: 0; right: 25%;">Submit Now</button>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-5">
+					<div id="carouselId" class="carousel slide position-relative"
+						data-bs-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item rounded">
+								<img src="fruit/img/gooblemini_rgb_lamp.webp"
+									class="img-fluid w-100 h-100 bg-secondary rounded"
+									alt="First slide"> <a href="#"
+									class="btn px-4 py-2 text-white rounded">Lamps & Lighting</a>
+							</div>
+							<div class="carousel-item rounded active">
+								<img src="fruit/img/clocky-1000x1000.webp"
+									class="img-fluid w-100 h-100 rounded" alt="Second slide">
+								<a href="#" class="btn px-4 py-2 text-white rounded">Creative
+									& Stationary</a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button"
+							data-bs-target="#carouselId" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button"
+							data-bs-target="#carouselId" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- hero ends -->
-	
+
 	<!-- feature section start -->
-		<div class="container-fluid featurs py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-car-side fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>Free Shipping</h5>
-                                <p class="mb-0">Free on order over &#8377;1999</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-user-shield fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>Security Payment</h5>
-                                <p class="mb-0">100% security payment</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>7 Day Return</h5>
-                                <p class="mb-0">30 day money guarantee</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fa fa-phone-alt fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>24/7 Support</h5>
-                                <p class="mb-0">Support every time fast</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid featurs py-5">
+		<div class="container py-5">
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-3">
+					<div class="featurs-item text-center rounded bg-light p-4">
+						<div
+							class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+							<i class="fas fa-car-side fa-3x text-white"></i>
+						</div>
+						<div class="featurs-content text-center">
+							<h5>Free Shipping</h5>
+							<p class="mb-0">Free on order over &#8377;1999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="featurs-item text-center rounded bg-light p-4">
+						<div
+							class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+							<i class="fas fa-user-shield fa-3x text-white"></i>
+						</div>
+						<div class="featurs-content text-center">
+							<h5>Security Payment</h5>
+							<p class="mb-0">100% security payment</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="featurs-item text-center rounded bg-light p-4">
+						<div
+							class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+							<i class="fas fa-exchange-alt fa-3x text-white"></i>
+						</div>
+						<div class="featurs-content text-center">
+							<h5>7 Day Return</h5>
+							<p class="mb-0">30 day money guarantee</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="featurs-item text-center rounded bg-light p-4">
+						<div
+							class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+							<i class="fa fa-phone-alt fa-3x text-white"></i>
+						</div>
+						<div class="featurs-content text-center">
+							<h5>24/7 Support</h5>
+							<p class="mb-0">Support every time fast</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- feature section ends -->
-	
+
 	<!--shop start  -->
-	
-		<!-- <div class="container-fluid fruite py-5">
+
+	<!-- <div class="container-fluid fruite py-5">
             <div class="container py-5">
                 <div class="tab-class text-center">
                     <div class="row g-4">
@@ -459,117 +476,140 @@
         </div>
          -->
 	<!--shop ends  -->
-	
-	
+
+
 	<!-- features start -->
-		<div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-secondary rounded border border-secondary">
-                                <img src="fruit/img/travel_flashlight_gloves.webp" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-primary text-center p-4 rounded">
-                                        <h5 class="text-white">Handy LED Flashlight gloves</h5>
-                                        <h3 class="mb-0">20% OFF</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-dark rounded border border-dark">
-                                <img src="fruit/img/RainCloudAirHumidifierandEssentialOilDiffuserSpecs.webp" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-light text-center p-4 rounded">
-                                        <h5 class="text-primary">Air Humidifier</h5>
-                                        <h3 class="mb-0">Free delivery</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-primary rounded border border-primary">
-                                <img src="fruit/img/health_relief_gell_cap.webp" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-secondary text-center p-4 rounded">
-                                        <h5 class="text-white">Migraine relief cap</h5>
-                                        <h3 class="mb-0">Discount &#8377;249</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid service py-5">
+		<div class="container py-5">
+			<div class="row g-4 justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<a href="#">
+						<div
+							class="service-item bg-secondary rounded border border-secondary">
+							<img src="fruit/img/travel_flashlight_gloves.webp"
+								class="img-fluid rounded-top w-100" alt="">
+							<div class="px-4 rounded-bottom">
+								<div class="service-content bg-primary text-center p-4 rounded">
+									<h5 class="text-white">Handy LED Flashlight gloves</h5>
+									<h3 class="mb-0">20% OFF</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="#">
+						<div class="service-item bg-dark rounded border border-dark">
+							<img
+								src="fruit/img/RainCloudAirHumidifierandEssentialOilDiffuserSpecs.webp"
+								class="img-fluid rounded-top w-100" alt="">
+							<div class="px-4 rounded-bottom">
+								<div class="service-content bg-light text-center p-4 rounded">
+									<h5 class="text-primary">Air Humidifier</h5>
+									<h3 class="mb-0">Free delivery</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="#">
+						<div class="service-item bg-primary rounded border border-primary">
+							<img src="fruit/img/health_relief_gell_cap.webp"
+								class="img-fluid rounded-top w-100" alt="">
+							<div class="px-4 rounded-bottom">
+								<div
+									class="service-content bg-secondary text-center p-4 rounded">
+									<h5 class="text-white">Migraine relief cap</h5>
+									<h3 class="mb-0">Discount &#8377;249</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- features ends -->
-	
-	
+
+
 	<!-- gadgets shop start -->
-		<div class="container-fluid vesitable py-5">
-            <div class="container py-5" id="accessoriesshop">
-                <h1 class="mb-0">Our Accessories</h1>
-                <div class="owl-carousel vegetable-carousel justify-content-center">
-                	
-                	<c:forEach items="${allProduct}" var="p">	
-	                    <div class="border border-primary rounded position-relative vesitable-item">
-	                        <div class="vesitable-img">
-	                            <img src="${p.productImageURL1}" class="img-fluid w-100 rounded-top" alt="">
-	                        </div>
-	                        <!-- <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Health</div> -->
-	                        <div class="p-4 rounded-bottom">
-	                            <h4>${p.productName }</h4>
-	                            <p>${p.productDetail }</p>
-	                            <div class="d-flex justify-content-between flex-lg-wrap">
-	                                <p class="text-dark fs-5 fw-bold mb-0">&#8377;${p.offerPrice }</p>
-	                                <p class="text-dark fs-5 fw-bold mb-0"><s>&#8377;${p.basePrice }</s></p>
-	                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-	                            	
-	                            </div>
-	                            
-	                        </div>
-	                    </div>
-                    </c:forEach>
-                    
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid vesitable py-5">
+		<div class="container py-5" id="accessoriesshop">
+			<h1 class="mb-0">Our Accessories</h1>
+			<div class="owl-carousel vegetable-carousel justify-content-center">
+
+				<c:forEach items="${allProduct}" var="p">
+					<div
+						class="border border-primary rounded position-relative vesitable-item">
+						<div class="vesitable-img">
+							<img src="${p.productImageURL1}"
+								class="img-fluid w-100 rounded-top" alt="">
+						</div>
+						<!-- <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Health</div> -->
+						<div class="p-4 rounded-bottom">
+							<h4>${p.productName }</h4>
+							<p>${p.productDetail }</p>
+							<div class="d-flex justify-content-between flex-lg-wrap">
+								<p class="text-dark fs-5 fw-bold mb-0">&#8377;${p.offerPrice }</p>
+								<p class="text-dark fs-5 fw-bold mb-0">
+									<s>&#8377;${p.basePrice }</s>
+								</p>
+								<form action="add-to-cart" method="post">
+									<input type="hidden" name="productId" value="${p.productId}" />
+									<button type="submit"
+										class="btn border border-secondary rounded-pill px-3 text-primary">
+										<i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+										cart
+									</button>
+								</form>
+
+							</div>
+
+						</div>
+					</div>
+				</c:forEach>
+
+			</div>
+		</div>
+	</div>
 	<!-- gadgets shop ends -->
-	
-	
+
+
 	<!-- banner section start -->
-		<div class="container-fluid banner bg-secondary my-5">
-            <div class="container py-5">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="py-4">
-                            <h1 class="display-3 text-white">Best Gadgets</h1>
-                            <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
-                            <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
-                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <img src="fruit/img/health_relief_gell_cap.webp" class="img-fluid w-100 rounded" alt="">
-                            <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
-                                <h1 style="font-size: 100px;">1</h1>
-                                <div class="d-flex flex-column">
-                                    <span class="h2 mb-0">500&#8377;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid banner bg-secondary my-5">
+		<div class="container py-5">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6">
+					<div class="py-4">
+						<h1 class="display-3 text-white">Best Gadgets</h1>
+						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
+						<p class="mb-4 text-dark">The generated Lorem Ipsum is
+							therefore always free from repetition injected humour, or
+							non-characteristic words etc.</p>
+						<a href="#"
+							class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="position-relative">
+						<img src="fruit/img/health_relief_gell_cap.webp"
+							class="img-fluid w-100 rounded" alt="">
+						<div
+							class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
+							style="width: 140px; height: 140px; top: 0; left: 0;">
+							<h1 style="font-size: 100px;">1</h1>
+							<div class="d-flex flex-column">
+								<span class="h2 mb-0">500&#8377;</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- banner section ends -->
-	
+
 	<!-- best seller start-->
 	<!--
 		<div class="container-fluid py-5">
@@ -778,140 +818,151 @@
         </div>
         -->
 	<!-- best seller ends -->
-	
+
 	<!-- fact start -->
-		<div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>satisfied customers</h4>
-                                <h1>1963</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality of service</h4>
-                                <h1>99%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality certificates</h4>
-                                <h1>33</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Available Products</h4>
-                                <h1>789</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid py-5">
+		<div class="container">
+			<div class="bg-light p-5 rounded">
+				<div class="row g-4 justify-content-center">
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="counter bg-white rounded p-5">
+							<i class="fa fa-users text-secondary"></i>
+							<h4>satisfied customers</h4>
+							<h1>1963</h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="counter bg-white rounded p-5">
+							<i class="fa fa-users text-secondary"></i>
+							<h4>quality of service</h4>
+							<h1>99%</h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="counter bg-white rounded p-5">
+							<i class="fa fa-users text-secondary"></i>
+							<h4>quality certificates</h4>
+							<h1>33</h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="counter bg-white rounded p-5">
+							<i class="fa fa-users text-secondary"></i>
+							<h4>Available Products</h4>
+							<h1>789</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- fact ends -->
-	
+
 	<!-- Tastimonial start -->
-		<div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="testimonial-header text-center">
-                    <h4 class="text-primary">Our Testimonial</h4>
-                    <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Kate Christine</h4>
-                                    <p class="m-0 pb-3">Professor</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/student.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">John Doe</h4>
-                                    <p class="m-0 pb-3">Student</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="fruit/img/truck_driver.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Philip Kart</h4>
-                                    <p class="m-0 pb-3">Truck Driver</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid testimonial py-5">
+		<div class="container py-5">
+			<div class="testimonial-header text-center">
+				<h4 class="text-primary">Our Testimonial</h4>
+				<h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+			</div>
+			<div class="owl-carousel testimonial-carousel">
+				<div class="testimonial-item img-border-radius bg-light rounded p-4">
+					<div class="position-relative">
+						<i
+							class="fa fa-quote-right fa-2x text-secondary position-absolute"
+							style="bottom: 30px; right: 0;"></i>
+						<div class="mb-4 pb-4 border-bottom border-secondary">
+							<p class="mb-0">Lorem Ipsum is simply dummy text of the
+								printing Ipsum has been the industry's standard dummy text ever
+								since the 1500s,</p>
+						</div>
+						<div class="d-flex align-items-center flex-nowrap">
+							<div class="bg-secondary rounded">
+								<img src="fruit/img/testimonial-1.jpg" class="img-fluid rounded"
+									style="width: 100px; height: 100px;" alt="">
+							</div>
+							<div class="ms-4 d-block">
+								<h4 class="text-dark">Kate Christine</h4>
+								<p class="m-0 pb-3">Professor</p>
+								<div class="d-flex pe-5">
+									<i class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial-item img-border-radius bg-light rounded p-4">
+					<div class="position-relative">
+						<i
+							class="fa fa-quote-right fa-2x text-secondary position-absolute"
+							style="bottom: 30px; right: 0;"></i>
+						<div class="mb-4 pb-4 border-bottom border-secondary">
+							<p class="mb-0">Lorem Ipsum is simply dummy text of the
+								printing Ipsum has been the industry's standard dummy text ever
+								since the 1500s,</p>
+						</div>
+						<div class="d-flex align-items-center flex-nowrap">
+							<div class="bg-secondary rounded">
+								<img src="fruit/img/student.jpg" class="img-fluid rounded"
+									style="width: 100px; height: 100px;" alt="">
+							</div>
+							<div class="ms-4 d-block">
+								<h4 class="text-dark">John Doe</h4>
+								<p class="m-0 pb-3">Student</p>
+								<div class="d-flex pe-5">
+									<i class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial-item img-border-radius bg-light rounded p-4">
+					<div class="position-relative">
+						<i
+							class="fa fa-quote-right fa-2x text-secondary position-absolute"
+							style="bottom: 30px; right: 0;"></i>
+						<div class="mb-4 pb-4 border-bottom border-secondary">
+							<p class="mb-0">Lorem Ipsum is simply dummy text of the
+								printing Ipsum has been the industry's standard dummy text ever
+								since the 1500s,</p>
+						</div>
+						<div class="d-flex align-items-center flex-nowrap">
+							<div class="bg-secondary rounded">
+								<img src="fruit/img/truck_driver.jpg" class="img-fluid rounded"
+									style="width: 100px; height: 100px;" alt="">
+							</div>
+							<div class="ms-4 d-block">
+								<h4 class="text-dark">Philip Kart</h4>
+								<p class="m-0 pb-3">Truck Driver</p>
+								<div class="d-flex pe-5">
+									<i class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i> <i
+										class="fas fa-star text-primary"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- tastimonial ends -->
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	<jsp:include page="UserFooter.jsp"></jsp:include>
 	<jsp:include page="UserJS.jsp"></jsp:include>
 </body>

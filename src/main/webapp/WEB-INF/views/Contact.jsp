@@ -95,3 +95,5 @@
 		</div>
 	</div>
 	<!-- Contact End -->
+	</body>
+	</html>

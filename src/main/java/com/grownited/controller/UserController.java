@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.grownited.entity.ProductEntity;
 import com.grownited.entity.UserEntity;
+import com.grownited.repository.CartRepository;
 import com.grownited.repository.ProductRepository;
 
 import jakarta.servlet.http.HttpSession;
@@ -19,6 +20,8 @@ public class UserController {
 	@Autowired
 	ProductRepository repoProduct;
 	
+	@Autowired
+	CartRepository repoCart;
 	
 	@GetMapping("home")
 	public String home() {
@@ -27,6 +30,7 @@ public class UserController {
 		return "Home";
 	}
 	
+	@SuppressWarnings("unused")
 	@GetMapping("userhome")
 	public String userHome(HttpSession session, Model model) {
 		UserEntity user = (UserEntity)session.getAttribute("user");
@@ -38,6 +42,12 @@ public class UserController {
 		
 		model.addAttribute("userId", userId);
 		
+		if (user != null) {
+			int count = repoCart.getCartCountByUserId(user.getUserId());
+			model.addAttribute("cartCount", count);
+		} else {
+			model.addAttribute("cartCount", 0);
+		}
 		
 		return "UserHome";
 	}
