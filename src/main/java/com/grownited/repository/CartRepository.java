@@ -48,6 +48,8 @@ public interface CartRepository extends JpaRepository<CartEntity, Integer> {
 	
 	@Query(value = "SELECT COUNT(*) FROM cart WHERE user_id = :userId", nativeQuery = true)
 	int getCartCountByUserId(@Param("userId") Integer userId);
+ 
+	List<CartEntity> findByUserId(Integer userId);
 
 
 }

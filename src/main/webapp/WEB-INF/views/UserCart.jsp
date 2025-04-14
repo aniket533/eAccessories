@@ -131,20 +131,29 @@
 						<div
 							class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
 							<h5 class="mb-0 ps-4 me-4">Total</h5>
-							<p class="mb-0 pe-4">&#8377;${grandTotal}</p>
 							<!-- Grand total -->
 						</div>
-						<button
-							class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4"
-							type="button">Proceed Checkout</button>
+						<form id="checkoutForm" action="/cart/checkout" method="post">
+							<button
+								class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4"
+								type="submit">Proceed Checkout</button>
+						</form>
+
+
 					</div>
 				</div>
 			</div>
+			<c:if test="${not empty param.successAlert}">
+				<div class="alert alert-success">${param.successAlert}</div>
+			</c:if>
+
 		</div>
 	</div>
 	<!-- Cart Page end -->
 
 	<jsp:include page="UserFooter.jsp"></jsp:include>
 	<jsp:include page="UserJS.jsp"></jsp:include>
+
+
 </body>
 </html>
