@@ -61,7 +61,7 @@
 			<h1>Add Product</h1>
 			<nav>
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="home">Home</a></li>
+					<li class="breadcrumb-item"><a href="admindashboard">Home</a></li>
 					<li class="breadcrumb-item active">Add Product</li>
 				</ol>
 			</nav>

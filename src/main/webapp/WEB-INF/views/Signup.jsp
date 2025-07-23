@@ -131,7 +131,7 @@
                     </div>
                     
                     <div class="text-danger">
-                    	${error };
+                    	${error }
                     </div>
                     
                     <div class="col-12">
